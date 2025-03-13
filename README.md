@@ -1,5 +1,5 @@
 [![GitHub Release](https://img.shields.io/github/release/Kegg1701/P4ELEC)](https://github.com/Kegg1701/P4ELEC/releases/latest)
-![GitHub Downloads (all assets, latest release)](https://img.shields.io/github/downloads/Kegg1701/P4ELEC/latest/total)
+[![GitHub Downloads (all assets, latest release)](https://img.shields.io/github/downloads/Kegg1701/P4ELEC/latest/total)](https://github.com/Kegg1701/P4ELEC/releases/latest)
 ---
 <p align="center">
   <img width="551" height="47" src="https://github.com/user-attachments/assets/99cedf03-1f85-4751-967d-fef2343df81e">
