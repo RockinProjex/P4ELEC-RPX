@@ -6,4 +6,4 @@ Born from the want to have a better experience for my **Panel 4 v5 R36s** handhe
 
 and from that, and guessing the AmberELEC guys may not want to support it, due to time and the various projects they are split across, there's also a version for the **BATLEXP G350**.
 
-I encouraged you to support the AmberELEC developers for their foundational work, and bringing such a stable base to the community to play, work and build uppon.
+I encouraged you to support the AmberELEC developers for their foundational work, and bringing such a stable base to the community to play, work and build upon.
