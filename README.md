@@ -1,4 +1,4 @@
-<img src="https://github.com/user-attachments/assets/99cedf03-1f85-4751-967d-fef2343df81e" width=390>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://github.com/user-attachments/assets/99cedf03-1f85-4751-967d-fef2343df81e" width=390>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [![Latest Version](https://img.shields.io/github/release/Kegg1701/P4ELEC?label=Release)](https://github.com/Kegg1701/P4ELEC/releases/latest)
 [![GitHub Downloads (all assets, latest release)](https://img.shields.io/github/downloads/Kegg1701/P4ELEC/latest/total?label=Downloads%40Release)](https://github.com/Kegg1701/P4ELEC/releases/latest)
 [![GitHub Downloads](https://img.shields.io/github/downloads/Kegg1701/P4ELEC/total?label=Downloads)](https://github.com/Kegg1701/P4ELEC/releases/latest)
