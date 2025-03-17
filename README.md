@@ -12,6 +12,5 @@ I encouraged you to support the [AmberELEC](https://amberelec.org/) developers f
 **Direct Download**
 <p align="center"> <a href="https://github.com/Kegg1701/P4ELEC/releases/download/20250315/PAN4ELEC-RG351MP.aarch64-20250315.img.gz">
 <img src="https://github.com/user-attachments/assets/5543ccf6-197a-47b3-92e8-a97c69e88ad0" /> </a> </p>
-
 <p align="center"> <a href="https://github.com/Kegg1701/P4ELEC/releases/download/20250315/PAN4ELEC-RG351MP.aarch64-20250312-G350.img.gz">
 <img src="https://github.com/user-attachments/assets/6c6de3e5-9cfd-4ae5-a475-0ab4c511c7b3" /> </a> </p>
