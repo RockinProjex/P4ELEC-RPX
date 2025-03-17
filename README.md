@@ -8,3 +8,6 @@ Born from the want to have a better experience for my **Panel 4 v5 R36s** handhe
 and from that, and guessing the AmberELEC guys may not want to support it, due to time and the various projects they are split across, there's also a version for the **BATLEXP G350**.
 
 I encouraged you to support the [AmberELEC](https://amberelec.org/) developers for their foundational work, and bringing such a stable base to the community to play, work and build upon.
+<a href="https://example.com" target="_blank">
+<p align="center"> <img src="https://github.com/user-attachments/assets/af59c6b1-0c02-4bff-afda-c3df74efdd6d" /> </p>
+</a>
