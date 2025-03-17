@@ -15,9 +15,11 @@ I encouraged you to support the [AmberELEC](https://amberelec.org/) developers f
 <p align="center"> <a href="https://github.com/Kegg1701/P4ELEC/releases/download/20250315/PAN4ELEC-RG351MP.aarch64-20250312-G350.img.gz">
 <img src="https://github.com/user-attachments/assets/963fd278-ed78-471e-b39a-59969812bfde" /> </a> </p>
 
+
 **Installation**
 
 Download from above, or the release page, to your computer.
+
 Use [Etcher](https://etcher.balena.io/), [Raspberry Pi Imager](https://www.raspberrypi.com/software/), or what ever your favorite desk/laptop SD warez might be, to write the image to a fresh SD card.
 Keep in mind, the better class of card you have, the more responsive any firmware will be. Best you look out either an A1 or A2 by Sandisk or Transcend.
 If you intend to have a dual card setup, i'd go with a 16gb card for the OS and any size you wish up to 128gb (256gb is possible, just play it safe).
