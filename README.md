@@ -14,3 +14,5 @@ I encouraged you to support the [AmberELEC](https://amberelec.org/) developers f
 <img src="https://github.com/user-attachments/assets/532be378-939b-4366-bad8-5deed897bbd3" /> </a> </p>
 <p align="center"> <a href="https://github.com/Kegg1701/P4ELEC/releases/download/20250315/PAN4ELEC-RG351MP.aarch64-20250312-G350.img.gz">
 <img src="https://github.com/user-attachments/assets/963fd278-ed78-471e-b39a-59969812bfde" /> </a> </p>
+
+For more info on the most recent release and update .tar files [CLICK HERE](https://github.com/Kegg1701/P4ELEC/releases/latest).
