@@ -9,4 +9,4 @@ and from that, and guessing the AmberELEC guys may not want to support it, due t
 
 I encouraged you to support the [AmberELEC](https://amberelec.org/) developers for their foundational work, and bringing such a stable base to the community to play, work and build upon.
 <p align="center"> <a href="https://github.com/Kegg1701/P4ELEC/releases/download/20250315/PAN4ELEC-RG351MP.aarch64-20250315.img.gz">
-<img src="https://github.com/user-attachments/assets/af59c6b1-0c02-4bff-afda-c3df74efdd6d" /> </a> </p>
+<img src="https://github.com/user-attachments/assets/8777f849-1988-410e-a8de-7ddb248d17be" /> </a> </p>
