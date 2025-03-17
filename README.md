@@ -16,6 +16,7 @@ I encouraged you to support the [AmberELEC](https://amberelec.org/) developers f
 <img src="https://github.com/user-attachments/assets/963fd278-ed78-471e-b39a-59969812bfde" /> </a> </p>
 
 **Installation**
+
 Download from above, or the release page, to your computer.
 Use [Etcher](https://etcher.balena.io/), [Raspberry Pi Imager](https://www.raspberrypi.com/software/), or what ever your favorite desk/laptop SD warez might be, to write the image to a fresh SD card.
 Keep in mind, the better class of card you have, the more responsive any firmware will be. Best you look out either an A1 or A2 by Sandisk or Transcend.
