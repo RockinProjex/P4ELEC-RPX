@@ -9,14 +9,14 @@ and from that, and guessing the AmberELEC guys may not want to support it, due t
 
 I encouraged you to support the [AmberELEC](https://amberelec.org/) developers for their foundational work, and bringing such a stable base to the community to play, work and build upon.
 
-**Direct Download**
+## Direct Download
 <p align="center"> <a href="https://github.com/Kegg1701/P4ELEC/releases/download/20250315/PAN4ELEC-RG351MP.aarch64-20250315.img.gz">
 <img src="https://github.com/user-attachments/assets/532be378-939b-4366-bad8-5deed897bbd3" /> </a> </p>
 <p align="center"> <a href="https://github.com/Kegg1701/P4ELEC/releases/download/20250315/PAN4ELEC-RG351MP.aarch64-20250312-G350.img.gz">
 <img src="https://github.com/user-attachments/assets/963fd278-ed78-471e-b39a-59969812bfde" /> </a> </p>
 
 
-**Installation**
+## Installation
 
 Download from above, or the release page, to your computer.
 
