@@ -2,9 +2,9 @@
 
 Originally based upon Anthony Caccese's Art-book-next-es theme, this is exactly as the folder name says.. a demake to an earlier release of possibly the best theme there is.. I've have done a lot of changes, brought back older features, made it more compatible with Rocknix and ArkOS Emulation Station, while keeping it within Batocera's theming framework. From new color schemes, various animation effects, optimised logo artwork for 640x480 systems, the inclusion of a grid and wheel rom viewing mode, there's a lot I've done.
 
-Below is Ant's original right up.
+Below is Ant's original right up, oh... with addition of some screenshot from this version.
 
-Cheers Ant.
+Cheers Ant, I learnt a heap load from what you've done.
 
 KEgg
 
@@ -14,9 +14,17 @@ Based on the style of a coffee table book.
 This version of the theme works with all distributions that leverage the Batocera fork of EmulationStation.  This includes [Batocera](https://batocera.org/) and [RetroBat](https://www.retrobat.org/)
 
 ## Preview
-| ![system view](https://github.com/anthonycaccese/art-book-next-es/assets/1454947/c0252388-2268-444c-ae3d-07f15b87a98c) | ![menu](https://github.com/anthonycaccese/art-book-next-es/assets/1454947/39653703-f6e8-4940-98fc-66ce1c5af271) |
+| ![u_screenshot_076](https://github.com/user-attachments/assets/c842f370-109e-432b-8c83-19ed7bccc2c5) | ![u_screenshot_077](https://github.com/user-attachments/assets/417a5260-50c1-4ab1-af5a-dc1ec59a9c20) |
 | -- | -- |
-| ![gamelist-view-1](https://github.com/anthonycaccese/art-book-next-es/assets/1454947/e8251f3c-f033-43ed-8b55-f3a93c28131a) | ![gamelist-view-2](https://github.com/anthonycaccese/art-book-next-es/assets/1454947/fadfba3e-54a4-48e2-a11c-39c52797dc56) |
+| ![u_screenshot_079](https://github.com/user-attachments/assets/bada4ba5-540f-40db-8e08-ce1aef88ede4) | ![u_screenshot_080](https://github.com/user-attachments/assets/47d21037-ebb3-4c72-b584-e08cccf8ac55) |
+
+
+
+
+
+
+
+
 
 ## Theme Configuration
 
