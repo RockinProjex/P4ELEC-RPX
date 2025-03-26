@@ -9,5 +9,3 @@ This may not line up with their source code exactly, and there will be personal 
 The likes of code changes to dtb's I have created for PAN4ELEC will not be shared as these were decompiled and adapted from the stock dtb's that came with the hardwares OS. I would love to know where the original dts files came from for these dtb's, unless they are coded from scratch, which I highly doubt.
 
 Last thing to say is this... everything starts somewhere.. ArkOS being Retro Arena based, being Ubuntu.. AmberELEC forked from 351ELEC, being forked from EMUELEC, and that coming from the ground work by COREELEC, then LIBREELEC etc etc etc.. Unlike others, I'm not asking for a single penny to be contributed for my efforts, even though there's people who would love to, because some of us feel theirs something ethically wrong from possibly profiting this way, even if it's small amounts. This has been just for fun on those nights I get bored.. I won't be going into what I truly think about the licensing here.
-
-One dev should think about removing a certain repository from their git.. In part.. that could also give reason as to why I have not done a PR.
