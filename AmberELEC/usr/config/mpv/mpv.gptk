@@ -1,0 +1,47 @@
+back = v
+guide = \"
+guide = add_shift
+start = j
+
+a = p
+a_hk = y
+b = 3
+b = add_shift
+x = o
+x_hk = q
+x_hk = add_shift
+y = l
+y = add_shift
+
+
+up = up
+up = repeat
+down = down
+down = repeat
+left = left
+left = repeat
+right = right
+right = repeat
+l1 = w
+l1 = repeat
+l2 = [
+l3 = f8
+
+r1 = e
+r1 = repeat
+r2 = ]
+r3 = s
+r3 = add_shift
+
+left_analog_up = c
+left_analog_down = c
+left_analog_down = add_shift
+left_analog_left = ,
+left_analog_left = add_shift
+left_analog_right = .
+left_analog_right = add_shift
+right_analog_up = \"
+right_analog_down = \"
+right_analog_left = \"
+right_analog_right = \"
+
