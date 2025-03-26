@@ -19,13 +19,6 @@ This version of the theme works with all distributions that leverage the Batocer
 | ![u_screenshot_079](https://github.com/user-attachments/assets/bada4ba5-540f-40db-8e08-ce1aef88ede4) | ![u_screenshot_080](https://github.com/user-attachments/assets/47d21037-ebb3-4c72-b584-e08cccf8ac55) |
 
 
-
-
-
-
-
-
-
 ## Theme Configuration
 
 The following options can be changed directly from the main menu under `UI Settings > Theme Configuration`
