@@ -1,6 +1,6 @@
 # Art Book Next for EmulationStation
 
-Originally based upon Anthony Caccese's Art-book-next-es theme, this is exactly as the folder name says.. a demake to an earlier release of possibly the best theme there is.. I've have done a lot of changes, brought back older features, made it more compatible with Rocknix and ArkOS Emulation Station, while keeping it within Batocera's theming framework. From new color themes, to optimised logo artwork for 640x480 systems, the inclusion of a grid and wheel rom viewing mode, there's a lot I've done.
+Originally based upon Anthony Caccese's Art-book-next-es theme, this is exactly as the folder name says.. a demake to an earlier release of possibly the best theme there is.. I've have done a lot of changes, brought back older features, made it more compatible with Rocknix and ArkOS Emulation Station, while keeping it within Batocera's theming framework. From new color schemes, to optimised logo artwork for 640x480 systems, the inclusion of a grid and wheel rom viewing mode, there's a lot I've done.
 
 Below is Ant's original right up.
 
