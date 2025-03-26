@@ -1,0 +1,2045 @@
+<!--
+theme name:    Art Book Next
+author:        Anthony Caccese -- Modded by KEgg
+license:       creative commons CC-BY-NC-SA
+-->
+<theme>
+   <formatVersion>7</formatVersion>
+
+   <!-- Distribution -->
+   <subset name="distribution" displayName="Distribution">
+      <include name="batocera" displayName="Batocera" />
+      <include name="retrobat" displayName="Retrobat" />
+      <include name="rocknix" displayName="RockNix" />
+   </subset>
+
+   <!-- Variables -->
+   <variables>
+      <spacerImage>./_inc/images/space.png</spacerImage>
+      <distributionPath ifSubset="distribution:retrobat">~/.emulationstation/</distributionPath><!-- RetroBat\emulationstation\.emulationstation\ -->
+      <distributionPath ifSubset="distribution:batocera|rocknix">./../../</distributionPath><!-- userdata/ -->
+      <themeCustomizationsPath>${distributionPath}theme-customizations/art-book-next/</themeCustomizationsPath>
+   </variables>
+
+
+   <!-- ------ UI Theme Configuration items ------ -->
+
+
+
+   <!-- Aspect Ratio -->
+   <subset name="aspect-ratio" displayName="Aspect Ratio">
+      <!-- <include if="{screen.ratio} == '16/10'" name="16-10" displayName="16:10 (Detected)" /> -->
+      <include if="{screen.ratio} == '16/9'" name="16-9" displayName="16:9 (Detected)" />
+      <include if="{screen.ratio} == '4/3'" name="4-3" displayName="4:3 (Detected)" />
+      <include if="{screen.ratio} == '3/2'" name="3-2" displayName="3:2 (Detected)" />
+      <include if="${screen.width} == '720' && ${screen.height} == '720'" name="1-1" displayName="1:1 (Detected)" />
+      <!-- <include name="16-10" displayName="16:10" /> -->
+      <include name="16-9" displayName="16:9" /> 
+      <include name="4-3" displayName="4:3" />
+      <!-- <include name="3-2" displayName="3:2" />
+      <include name="1-1" displayName="1:1" /> -->
+   </subset>
+
+   <!-- Color Scheme -->
+   <subset name="color-scheme" displayName="Color Scheme">
+      <include name="art-book-next" displayName="Art Book Next" />
+      <include name="art-book" displayName="Art Book" />
+      <include name="knulli" displayName="Knulli" />
+      <include name="bruce" displayName="Bruce" />
+      <include name="dracula" displayName="Dracula" />
+      <include name="tokyo" displayName="Tokyo" />
+      <include name="steam-os-nord" displayName="OS Nord" />
+      <include name="steam-os" displayName="Steam OS" />
+      <include name="gb-pocket" displayName="GB Pocket" />
+      <include name="dos-dweeb" displayName="DOS-Dweeb" />
+      <!-- <include name="snes" displayName="SNES" />
+      <include name="famicom" displayName="Famicom" />-->
+      <include name="black" displayName="Black" />
+      <include name="grayscale" displayName="Grayscale" />
+      <include name="custom" displayName="Custom" />
+   </subset>
+   <include>./colors.xml</include>
+   <include ifSubset="color-scheme:custom">${themeCustomizationsPath}colors.xml</include>
+
+   <!-- System View Style -->
+   <subset name="system-view-style" displayName="System View: Style">
+      <include name="multi" displayName="Multi Artwork" />
+      <include name="centered" displayName="Centered Artwork (Multiple Logos)" />
+      <include name="centered-one-logo" displayName="Centered Artwork (Single Logo)" />
+      <include name="no-artwork" displayName="No Artwork" />
+      <include name="no-artwork-one-logo" displayName="No Artwork (Single Logo)" />
+   </subset>
+
+   <!-- System Carousel Artwork -->
+   <subset name="system-carousel-artwork" displayName="System View: Artwork">
+      <include name="default" displayName="Default" />
+      <include name="noir" displayName="Noir" />
+      <include name="custom" displayName="Custom" />
+      <include name="fullscreen-custom" displayName="Custom (Fullscreen)" />
+   </subset>
+
+   <!-- Logos -->
+   <subset name="system-logos" displayName="System View: Logos">
+      <include name="default" displayName="Default" />
+      <include name="font" displayName="Themes Font" />
+      <include name="custom" displayName="Custom" />
+   </subset>
+
+   <!-- multi art Logo Transition -->
+   <subset name="multi-logo-trans" displayName="Single Logo Transition">
+      <include name="logo-sysa" displayName="System Auto" />
+      <include name="logo-zoom" displayName="Zoom Bump" />
+      <include name="logo-swoop" displayName="Swoop" />
+      <include name="logo-dbeat" displayName="Drop" />
+      <include name="logo-skid" displayName="Skid" />
+      <!-- <include name="logo-rk" displayName="rocking" /> -->
+      <include name="logo-spnr" displayName="spinner" />
+      <!-- <include name="logo-sl-l" displayName="Slide Right" /> -->
+      <!-- <include name="logo-fl-l" displayName="Float left" /> -->
+      <!-- <include name="logo-fl-r" displayName="Float Right" /> -->
+   </subset> 
+
+
+
+   <!-- Gamelist View Style -->
+   <subset name="gamelist-view-style" displayName="Gamelist View: Style">
+      <include name="metadata-on" displayName="Metadata On" />
+      <include name="metadata-on-immersive" displayName="Metadata On (Immersive)" />
+      <include name="metadata-off" displayName="Metadata Off" />
+      <include name="metadata-off-immersive" displayName="Metadata Off (Immersive)" />
+   </subset>
+
+   <!-- Gamelist Artwork -->
+   <subset name="gamelist-view-artwork" displayName="Gamelist View: Artwork">
+      <include name="image" displayName="Image" />
+      <include name="boxart" displayName="Boxart" />
+      <include name="marquee" displayName="Logo" />
+   </subset>
+
+   <!-- Gamelist Video -->
+   <subset name="gamelist-video" displayName="Gamelist View: Video">
+      <include name="on" displayName="On" />
+      <include name="off" displayName="Off" />
+   </subset>
+
+   <!-- Gamelist Font Size -->
+   <subset name="fonts" displayName="Gamelist View: Font Size">
+      <include name="default" displayName="Default" />
+      <include name="large" displayName="Large" />
+      <include name="small" displayName="Small" />
+   </subset>
+
+   <!-- Gamelist :: Grid ROM Titles -->
+   <subset name="gl-grid-rom-title" displayName="Gamelist Grid: Rom Titles">
+      <include name="off" displayName="Off" />
+      <include name="on" displayName="On" />
+   </subset>
+
+   <!-- Gamelist :: Grid ROM highlighting -->
+   <subset name="gl-grid-rom-highlight" displayName="Gamelist Grid: Rom Highlight">
+      <include name="zoom" displayName="Zoom" />
+      <include name="outline" displayName="Outline" />
+   </subset>
+
+   <!-- Carousel Game Count -->
+   <subset name="carousel-gamecount" displayName="Carousel: Game Count">
+      <include name="off" displayName="Off" />
+      <include name="on" displayName="On" />
+   </subset>
+
+   <!-- Carousel Game Count Position -->
+   <subset name="carousel-gc-pos" displayName="Carousel: Game Count Pos" ifSubset="carousel-gamecount:on">
+      <!-- ifSubset="carousel-gamecount:on" -->
+      <include name="gc-tl" displayName="Top Left" />
+      <include name="gc-cntr" displayName="Centered" />
+      <include name="gc-br" displayName="Bottom Right" />
+   </subset>
+
+   <!-- Carousel Game Count Animation switch -->
+   <subset name="carousel-gc-anim" displayName="Carousel: Count Anim" ifSubset="carousel-gamecount:on">
+      <!-- ifSubset="carousel-gamecount:on" -->
+      <include name="gca-on" displayName="On" />
+      <include name="gca-off" displayName="Off" />
+   </subset>
+
+   <!-- Overlay Effects switch -->
+   <subset name="overlay-effects" displayName="Overlay Effects">
+      <include name="off" displayName="Off"/>
+      <include name="on" displayName="On"/>
+   </subset>
+
+   <!-- Dirt overlay -->
+   <subset name="dirt-overlay" displayName="Dirt Overlay" ifSubset="overlay-effects:on">
+      <include name="off" displayName="Off"/>
+      <include name="on" displayName="On"/>
+   </subset>
+
+   <!-- lcd overlay -->
+   <subset name="overlay-lcd" displayName="LCD Overlay" ifSubset="overlay-effects:on">
+      <include name="off" displayName="Off" />
+      <include name="1" displayName="LCD 001" />
+      <include name="2" displayName="LCD 002" />
+      <include name="3" displayName="LCD 003" />
+      <include name="4" displayName="LCD 004" />
+      <include name="5" displayName="LCD 005 GB-DMG" />
+      <include name="6" displayName="LCD 006 GB-Pocket" />
+      <include name="7" displayName="LCD 007 GB-Color" />
+   </subset>
+
+   <!-- scanlines overlay -->
+   <subset name="overlay-scanline" displayName="Scanlines Overlay" ifSubset="overlay-effects:on">
+      <include name="off" displayName="Off" />
+      <include name="1" displayName="Scanline Type1" />
+      <include name="2" displayName="Scanline Type2" />
+      <include name="3" displayName="Scanline Type3" />
+      <include name="4" displayName="Scanline Type4" />
+      <include name="5" displayName="Scanline CRT1" />
+      <include name="6" displayName="Scanline CRT2" />
+      <include name="7" displayName="Scanline CRT3" />
+   </subset>
+
+   <!-- Menu Separators -->
+   <subset name="menu-separator" displayName="Menu View: Separators">
+      <include name="off" displayName="Off" />
+      <include name="on" displayName="On" />
+   </subset>
+
+   <!-- Auto Grid Size -->
+   <!-- <subset name="autogridsize" displayName="Automatic Grid Size" appliesTo="grid" >
+      <include name="automatic" displayName="Automatic"/>
+      <include name="large" displayName="2 Rows"/>
+      <include name="medium" displayName="3 Rows"/>
+      <include name="small" displayName="4 Rows"/>
+   </subset> -->
+
+
+
+   <!-- -------------------------------------------------------------------------------------------------------- -->
+
+
+
+
+   <!-- ------ Common Shared Components ------ -->
+
+
+   <view name="screen,system">
+      <text name="logoText">
+         <fontSize>0.045</fontSize>
+      </text>
+   </view>
+
+
+
+
+   <!-- ------ Time - Battery - Wifi BAR ------ -->
+
+
+   <view name="screen">
+      <image name="borderOverlay" extra="true">
+         <path>./_inc/images/overlays/borders-4-3.png</path>
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <zIndex>201</zIndex>
+      </image>
+
+      <image name="borderMists" ifSubset="overlay-effects:on" extra="true">
+         <visible ifSubset="dirt-overlay:off">0</visible>
+         <path>./_inc/images/overlays/borders-4-3-V.png</path>
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <zIndex>200</zIndex>
+      </image>
+
+      <image name="overlay-lcd-pic" ifSubset="overlay-effects:on" extra="true">
+         <visible ifSubset="overlay-lcd:off">0</visible>
+         <path ifSubset="overlay-lcd:1">./_inc/images/overlays/lcd-grid-001.png</path>
+         <path ifSubset="overlay-lcd:2">./_inc/images/overlays/lcd-grid-001-inv.png</path>
+         <path ifSubset="overlay-lcd:3">./_inc/images/overlays/lcd-grid-003.png</path>
+         <path ifSubset="overlay-lcd:4">./_inc/images/overlays/lcd-grid-004.png</path>
+         <path ifSubset="overlay-lcd:5">./_inc/images/overlays/lcd-grid-005-GB.png</path>
+         <path ifSubset="overlay-lcd:6">./_inc/images/overlays/lcd-grid-006-GBP.png</path>
+         <path ifSubset="overlay-lcd:7">./_inc/images/overlays/lcd-grid-007-GBC.png</path>
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <!-- <color>0000001f</color> -->
+         <color ifSubset="overlay-lcd:1">ffffff2f</color>
+         <color ifSubset="overlay-lcd:2">ffffff0f</color>
+         <color ifSubset="overlay-lcd:3|6">ffffff6f</color>
+         <color ifSubset="overlay-lcd:5|7">ffffff7f</color>
+         <zIndex>199</zIndex>
+      </image>
+
+      <image name="overlay-scanline-pic" ifSubset="overlay-effects:on" extra="true">
+         <visible ifSubset="overlay-scanline:off">0</visible>
+         <path ifSubset="overlay-scanline:1">./_inc/images/overlays/scanline-1_640x480.png</path>
+         <path ifSubset="overlay-scanline:2">./_inc/images/overlays/scanline-2_640x480.png</path>
+         <path ifSubset="overlay-scanline:3">./_inc/images/overlays/scanline-3_640x480.png</path>
+         <path ifSubset="overlay-scanline:4">./_inc/images/overlays/scanline-4_640x480.png</path>
+         <path ifSubset="overlay-scanline:5">./_inc/images/overlays/scanline-5_CRT1_640x480.png</path>
+         <path ifSubset="overlay-scanline:6">./_inc/images/overlays/scanline-6_CRT2_640x480.png</path>
+         <path ifSubset="overlay-scanline:7">./_inc/images/overlays/scanline-7_CRT3_640x480.png</path>
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <!-- <color>00000010</color> -->
+         <color ifSubset="overlay-scanline:1|2">ffffff0d</color>
+         <color ifSubset="overlay-scanline:3">ffffff2f</color>
+         <color ifSubset="overlay-scanline:4">ffffff3f</color>
+         <color ifSubset="overlay-scanline:6">ffffff9f</color>
+
+         <zIndex>198</zIndex>
+      </image>
+
+
+      <controllerActivity name="controllerActivity">
+         <visible>0</visible>
+      </controllerActivity>
+
+      <text name="clock">
+         <origin>1 0</origin>
+         <color>${statusBarIconColor}</color>
+         <size>0.09 0.075</size>
+         <fontPath>${clockFont}</fontPath>
+         <fontSize>0.04</fontSize>
+         <!-- <alignment>right</alignment> -->
+         <pos>0.8125 0.0125</pos>
+      </text>
+
+      <batteryIndicator name="batteryIndicator">
+         <color>${statusBarIconColor}</color>
+         <itemSpacing>0.004</itemSpacing>
+         <full>./_inc/images/battery-100-vertical.svg</full>
+         <at75>./_inc/images/battery-75-vertical.svg</at75>
+         <at50>./_inc/images/battery-50-vertical.svg</at50>
+         <at25>./_inc/images/battery-25-vertical.svg</at25>
+         <empty>./_inc/images/battery-0-vertical.svg</empty>
+         <incharge>./_inc/images/battery-charging-vertical.svg</incharge>
+         <networkIcon>./_inc/images/wifi-vertical.svg</networkIcon>
+         <alignment>right</alignment>
+         <size>0.06</size>
+      </batteryIndicator>
+   </view>
+
+
+
+
+   <!-- -------------------------------------------------------------------------------------------------------- -->
+
+
+
+
+   <!-- ------ Main System/Carousel Menu ------ -->
+
+   <view name="system">
+      <image name="background" extra="true">
+         <color>${systemBackgroundColor}</color>
+      </image>
+
+      <image name="system-carousel-bakground" extra="true">
+         <origin>0.5 0</origin>
+         <pos>0.5 0</pos>
+         <size>1 1</size>
+         <tile>true</tile>
+         <color>${systemCarouselBackgroundColor}</color>
+         <path>${spacerImage}</path>
+      </image>
+
+      <carousel name="systemcarousel">
+         <origin>0.5 0.5</origin>
+         <pos>0.5 0.5</pos>
+         <pos ifHelpPrompts="true">0.5 0.45</pos>
+         <size>1 1</size>
+         <color>00000000</color>
+         <type>horizontal</type>
+         <logoScale>1</logoScale>
+         <logoSize>0.7 0.4</logoSize>
+         <logoSize ifSubset="system-view-style:multi">1 1</logoSize>
+         <logoScale ifSubset="system-view-style:multi">1</logoScale>
+         <maxLogoCount>4</maxLogoCount>
+         <maxLogoCount ifSubset="system-view-style:centered-one-logo|no-artwork-one-logo">1</maxLogoCount>
+         <maxLogoCount ifSubset="system-view-style:centered|no-artwork">2</maxLogoCount>
+         <logoScale ifSubset="system-view-style:centered|no-artwork">2.7</logoScale>
+         <logoSize ifSubset="system-view-style:centered|no-artwork">0.25 0.15</logoSize>
+      </carousel>
+
+      <image ifSubset="system-view-style:centered|centered-one-logo" name="system-art" extra="true">
+         <origin>0.5 0.5</origin>
+         <pos>0.5 0.5</pos>
+         <pos ifHelpPrompts="true">0.5 0.45</pos>
+         <size>0 1</size>
+         <path>./_inc/systems/artwork-default/_default.png</path>
+         <path>./_inc/systems/artwork-default/${system.theme}.png</path>
+         <path ifSubset="system-carousel-artwork:default">./_inc/systems/artwork-default/_default.png</path>
+         <path ifSubset="system-carousel-artwork:default">./_inc/systems/artwork-default/${system.theme}.png</path>
+         <path ifSubset="system-carousel-artwork:noir">./_inc/systems/artwork-noir/_default.png</path>
+         <path ifSubset="system-carousel-artwork:noir">./_inc/systems/artwork-noir/${system.theme}.png</path>
+         <path ifSubset="system-carousel-artwork:custom">${themeCustomizationsPath}artwork/_default.jpg</path>
+         <path ifSubset="system-carousel-artwork:custom">${themeCustomizationsPath}artwork/_default.png</path>
+         <path ifSubset="system-carousel-artwork:custom">${themeCustomizationsPath}artwork/${system.theme}.jpg</path>
+         <path ifSubset="system-carousel-artwork:custom">${themeCustomizationsPath}artwork/${system.theme}.png</path>
+         <color>${systemArtColor}</color>
+         <saturation>${systemArtSaturation}</saturation>
+         <!-- <storyboard>
+            <animation event="activate" property="opacity" from="0" to="1" duration="350" mode="linear"/>
+            <animation event="activate" property="scale" from="2" to="1" duration="350" mode="easeIn"/>
+         </storyboard> -->
+      </image>
+
+      <image ifSubset="system-view-style:centered|centered-one-logo" name="system-art-mask" extra="true">
+         <path>./_inc/images/system-art-mask-4-3.png</path>
+         <origin>0.5 0</origin>
+         <pos>0.5 0</pos>
+         <size>0 1</size>
+         <!-- <color>${systemMaskColor}</color> -->
+         <color>${systemCarouselBackgroundColor}</color>
+      </image>
+
+      <image name="logo" ifSubset="system-logos:default|custom">
+         <path>./_inc/systems/logos-default/${system.theme}.svg</path>
+         <path ifSubset="system-logos:custom">${themeCustomizationsPath}logos/${system.theme}.svg</path>
+         <path ifSubset="system-logos:custom">${themeCustomizationsPath}logos/${system.theme}.png</path>
+         <color>${systemLogoColor}</color>
+         <saturation>${systemArtSaturation}</saturation>
+      </image>
+
+      <text name="logoText">
+         <fontPath>${fontLogo}</fontPath>
+         <forceUppercase>true</forceUppercase>
+         <fontSize>0.12</fontSize>
+         <size>0.8 0</size>
+         <lineSpacing>1</lineSpacing>
+         <alignment>center</alignment>
+         <origin>0.5 0.5</origin>
+         <pos>0.5 0.5</pos>
+         <pos ifHelpPrompts="true">0.5 0.45</pos>
+         <color>${systemLogoColor}</color>
+         <color ifSubset="system-logos:font, system-view-style:multi|centered-one-logo|no-artwork-one-logo">00000000</color>
+      </text>
+
+
+
+
+      <!-- ------------- multi-artwork ------------- -->
+
+
+         <!-- ----- BG ARTWORK ----- -->
+
+      <image ifSubset="system-view-style:multi" name="logo">
+         <path>./_inc/systems/artwork-default/_default.png</path>
+         <path>./_inc/systems/artwork-default/${system.theme}.png</path>
+         <path ifSubset="system-carousel-artwork:default">./_inc/systems/artwork-default/_default.png</path>
+         <path ifSubset="system-carousel-artwork:default">./_inc/systems/artwork-default/${system.theme}.png</path>
+         <path ifSubset="system-carousel-artwork:noir">./_inc/systems/artwork-noir/_default.png</path>
+         <path ifSubset="system-carousel-artwork:noir">./_inc/systems/artwork-noir/${system.theme}.png</path>
+         <path ifSubset="system-carousel-artwork:custom">${themeCustomizationsPath}artwork/_default.png</path>
+         <path ifSubset="system-carousel-artwork:custom">${themeCustomizationsPath}artwork/${system.theme}.png</path>
+         <color>${systemArtColor}</color>
+         <saturation>${systemArtSaturation}</saturation>
+      </image> 
+
+         <!-- ----- LOGO ----- -->
+
+      <image ifSubset="system-view-style:multi" name="system-art" extra="true">
+         <visible ifSubset="system-logos:font">false</visible>
+         <origin>0.5 0.5</origin>
+         <pos>0.5 0.5</pos>
+         <y ifHelpPrompts="true">0.445</y>
+         <maxSize>0.7 0.4</maxSize>
+         <path>./_inc/systems/logos-default/${system.theme}.svg</path>
+         <path ifSubset="system-logos:custom">${themeCustomizationsPath}logos/${system.theme}.svg</path>
+         <path ifSubset="system-logos:custom">${themeCustomizationsPath}logos/${system.theme}.png</path>
+         <color>${systemLogoColor}</color>
+         <saturation>${systemArtSaturation}</saturation>
+
+         <!-- Instant -->
+         <!-- <storyboard ifSubset="multi-logo-trans:logo-inst">
+            <animation property="opacity" to="1"/>
+         </storyboard> -->
+
+         <!-- slide fade from left -->
+         <!-- <storyboard ifSubset="multi-logo-trans:logo-sl-l">
+            <animation event="activate" property="x" from="-0.3" duration="500" mode="easeOut"/>
+            <animation event="activate" property="opacity" from="0" to="1" duration="600" mode="linear"/>
+            <animation property="scale" from="0" to="1" duration="350" mode="easeOut"/>
+            <animation event="deactivate" property="x" to="1.3" duration="500" mode="easeOut"/>
+            <animation event="deactivate" property="opacity" from="1" to="0" duration="600" mode="linear"/>
+         </storyboard> -->
+
+         <!-- Swoop --> 
+         <storyboard ifSubset="multi-logo-trans:logo-swoop">
+            <animation property="opacity" from="0" to="1" duration="450" mode="linear"/>
+            <animation property="scale" from="0" to="1" duration="350" mode="linear"/>
+            <animation property="y" from="-0.3" duration="350" mode="Bump"/>
+         </storyboard>
+
+         <!-- Drop down Heart Beat --> 
+         <storyboard ifSubset="multi-logo-trans:logo-dbeat">
+            <animation property="opacity" from="0" to="1" duration="350" mode="linear"/>
+            <animation property="y" from="-0.3" duration="350" mode="easeOut"/>
+            <!-- <animation property="scale" from="1" to="1.09" begin="1200" duration="2100" mode="EaseInOut" autoReverse="true" repeat="forever"/> -->
+         </storyboard>
+
+         <!-- Center ZOOM Bump -->
+         <storyboard  ifSubset="multi-logo-trans:logo-zoom">
+            <animation property="opacity" from="0" to="1" duration="400" mode="linear"/>
+            <animation property="scale" from="0" to="1" duration="400" mode="Bump"/>
+         </storyboard>
+
+         <!-- Center skid -->
+         <storyboard  ifSubset="multi-logo-trans:logo-skid">
+            <animation property="rotation" from="10" to="0" duration="350" mode="linear"/>
+            <!-- <animation property="scale" from="0" to="1" duration="400" mode="Bump"/> -->
+         </storyboard>
+
+         <!-- Center rocking -->
+         <!-- <storyboard  ifSubset="multi-logo-trans:logo-rk">
+            <animation property="rotation" from="5" to="-5" begin="0" duration="700" mode="EaseInOut" autoReverse="true" repeat="forever"/>
+            <!-- <animation property="scale" from="0" to="1" duration="400" mode="Bump"/>
+         </storyboard> -->
+
+         <!-- Center spinner -->
+         <storyboard  ifSubset="multi-logo-trans:logo-spnr">
+            <animation property="rotation" from="360" to="0" begin="0" duration="350" mode="easeOut"/>
+            <animation property="scale" from="0" to="1" duration="350" mode="linear"/>
+         </storyboard>
+
+         <!-- float from left Right for static-->
+         <!-- <storyboard ifSubset="multi-logo-trans:logo-fl-r">
+            <animation property="x" from="-0.3" duration="1500" mode="easeOut"/>
+            <animation property="y" from="0.45" to="0.35" duration="450" mode="EaseInOut" autoReverse="true" repeat="2"/>
+         </storyboard>
+         <storyboard ifSubset="multi-logo-trans:logo-fl-l">
+            <animation property="x" from="1.3" duration="1500" mode="easeOut"/>
+            <animation property="y" from="0.45" to="0.35" duration="450" mode="EaseInOut" autoReverse="true" repeat="2"/>
+         </storyboard> -->
+         <zIndex>50</zIndex>
+      </image>
+      
+      <image ifSubset="system-carousel-artwork:fullscreen-custom" name="system-art" extra="true">
+         <origin>0.5 0.5</origin>
+         <pos>0.5 0.5</pos>
+         <size>0 1</size>
+         <path>${themeCustomizationsPath}artwork/_default.jpg</path>
+         <path>${themeCustomizationsPath}artwork/_default.png</path>
+         <path>${themeCustomizationsPath}artwork/${system.theme}.jpg</path>
+         <path>${themeCustomizationsPath}artwork/${system.theme}.png</path>
+         <saturation>${systemArtSaturation}</saturation>
+         <zIndex>12</zIndex>
+      </image>
+
+      <!-- System View: No Artwork -->
+      <image ifSubset="system-view-style:no-artwork|no-artwork-one-logo" name="system-art" extra="true">
+         <path>${spacerImage}</path>
+         <origin>0.5 0</origin>
+         <pos>0.5 0</pos>
+         <size>1 1</size>
+         <tile>true</tile>
+         <color>${systemBackgroundColor}</color>
+         <zIndex>2</zIndex>
+      </image>
+
+      <!-- ------- MULITART LOGO TEXT ALT  ------- -->
+
+      <text ifSubset="system-view-style:multi|centered-one-logo|no-artwork-one-logo, system-logos:font" name="font_logoText" extra="true">
+         <origin>0</origin>
+         <pos>0.05 0.05</pos>
+         <size>0.9</size>
+         <pos ifHelpPrompts="true">0.05 0</pos>
+         <size ifHelpPrompts="true">0.9 0.95</size>
+         <text>{system:fullName}</text>
+         <fontPath>${fontLogo}</fontPath>
+         <forceUppercase>true</forceUppercase>
+         <fontSize>0.12</fontSize>         
+         <lineSpacing>0.9</lineSpacing>        
+         <alignment>center</alignment>
+         <color>${systemLogoColor}</color>
+         <saturation>${systemArtSaturation}</saturation>
+
+         <glowColor>${systemCarouselBackgroundColor}09</glowColor>
+         <glowSize>5</glowSize> 
+         <glowOffset>6</glowOffset>
+
+         <w ifSubset="color-scheme:gb-pocket|dos-dweeb">0.9</w>
+         <fontSize ifSubset="color-scheme:gb-pocket">0.1</fontSize>
+         <lineSpacing ifSubset="color-scheme:gb-pocket">1.2</lineSpacing>
+
+         <!-- Swoop --> 
+         <storyboard ifSubset="multi-logo-trans:logo-swoop">
+            <animation property="opacity" from="0" to="1" duration="450" mode="linear"/>
+            <animation property="scale" from="0" to="1" duration="350" mode="linear"/>
+            <animation property="y" from="-0.3" duration="350" mode="Bump"/>
+         </storyboard>
+
+         <!-- Drop down Heart Beat --> 
+         <storyboard ifSubset="multi-logo-trans:logo-dbeat">
+            <animation property="opacity" from="0" to="1" duration="350" mode="linear"/>
+            <animation property="y" from="-0.3" duration="350" mode="easeOut"/>
+            <!-- <animation property="scale" from="1" to="1.09" begin="1200" duration="2100" mode="EaseInOut" autoReverse="true" repeat="forever"/> -->
+         </storyboard>
+
+         <!-- Center ZOOM Bump -->
+         <storyboard  ifSubset="multi-logo-trans:logo-zoom">
+            <animation property="opacity" from="0" to="1" duration="400" mode="linear"/>
+            <animation property="scale" from="0" to="1" duration="400" mode="Bump"/>
+         </storyboard>
+
+         <!-- Center skid -->
+         <storyboard  ifSubset="multi-logo-trans:logo-skid">
+            <animation property="rotation" from="10" to="0" duration="350" mode="linear"/>
+            <!-- <animation property="scale" from="0" to="1" duration="400" mode="Bump"/> -->
+         </storyboard>
+
+         <!-- Center spinner -->
+         <storyboard  ifSubset="multi-logo-trans:logo-spnr">
+            <animation property="rotation" from="360" to="0" begin="0" duration="350" mode="easeOut"/>
+            <animation property="scale" from="0" to="1" duration="350" mode="linear"/>
+         </storyboard>
+
+         <zIndex>50</zIndex>
+      </text>
+
+      <!-- ------- GAME COUNT ------- -->
+
+      <text name="systemInfo">
+         <pos>0.0 0.675</pos>
+         <y ifSubset="system-logos:font, carousel-gc-pos:gc-cntr">0.75</y>
+         <y ifHelpPrompts="false">0.725</y>
+         <pos ifSubset="carousel-gc-pos:gc-tl">0.015 0.0135</pos>
+         <y ifSubset="carousel-gc-pos:gc-tl" ifHelpPrompts="false">0.0135</y>
+         <pos ifSubset="carousel-gc-pos:gc-br">-0.028 0.875</pos>
+         <y ifSubset="carousel-gc-pos:gc-br" ifHelpPrompts="false">0.92</y>
+         <alignment ifSubset="carousel-gc-pos:gc-tl">left</alignment>
+         <alignment ifSubset="carousel-gc-pos:gc-br">right</alignment>
+         <!-- <size>0.98 0.050</size> -->
+         <backgroundColor>ffffff00</backgroundColor>
+         <color ifSubset="carousel-gamecount:off">00000000</color>
+         <color ifSubset="carousel-gamecount:on">${systemLogoColor}</color>
+
+         <!-- <glowColor>${systemCarouselBackgroundColor}33</glowColor>
+         <glowSize>3</glowSize> -->
+         <glowColor ifSubset="carousel-gamecount:off">00000000</glowColor>
+         <glowColor ifSubset="carousel-gamecount:on">${systemCarouselBackgroundColor}12</glowColor>
+
+         <glowSize>3</glowSize>
+         <glowOffset>5</glowOffset>
+
+         <!-- <color>${systemLogoColor}</color> -->
+         <fontPath>${fontLogo}</fontPath>
+         <fontSize>0.055</fontSize>
+         <fontSize ifSubset="carousel-gc-pos:gc-tl|gc-br">0.045</fontSize>
+         <storyboard>
+            <animation event="activate" property="opacity" from="0" to="0.8" duration="350" mode="linear"/>
+         </storyboard>
+         <storyboard ifSubset="carousel-gc-pos:gc-tl,carousel-gc-anim:gca-on" repeat="forever">
+            <animation event="activate" property="opacity" from="0" to="0.9" begin="600" duration="500" mode="linear"/>
+            <!-- <animation event="activate" property="scale" from="0" to="1" duration="350" mode="Bump"/> -->
+            <animation property="x" from="-0.5" begin="500" duration="500" mode="easeOut"/>
+            <animation event="activate" property="opacity" from="0.9" to="0" begin="8000" duration="750" mode="linear"/>
+            <animation property="x" to="0.5" begin="8000" duration="750" mode="easeIn"/>
+            <animation property="opacity" from="0" to="0" begin="18000" duration="1"/>
+         </storyboard>
+         <storyboard ifSubset="carousel-gc-pos:gc-cntr,carousel-gc-anim:gca-on" repeat="forever">
+            <animation property="opacity" from="0" to="0.9" begin="600" duration="350" mode="linear"/>
+            <animation property="scale" from="0" to="1" begin="600" duration="350" mode="Bump"/>
+            <animation property="scale" from="1" to="2" begin="8000" duration="350" mode="linear"/>
+            <animation property="opacity" from="0.9" to="0" begin="8000" duration="350" mode="linear"/>
+            <animation property="opacity" from="0" to="0" begin="18000" duration="1"/>
+         </storyboard>
+         <storyboard ifSubset="carousel-gc-pos:gc-br,carousel-gc-anim:gca-on" repeat="forever">
+            <animation event="activate" property="opacity" from="0" to="0.9" begin="600" duration="900" mode="linear"/>
+            <!-- <animation property="x" from="0.5" begin="500" duration="500" mode="easeOut"/>-->
+            <animation event="activate" property="opacity" from="0.9" to="0" begin="8000" duration="600" mode="linear"/> 
+            <animation property="y" to="-0.1" begin="8000" duration="750" mode="easeIn"/>
+            <animation property="y" from="-0.1" to="-0.1" begin="18000" duration="1"/>
+         </storyboard> 
+         <zIndex>51</zIndex>        
+      </text>
+
+   </view>
+
+
+
+
+
+   <!-- -------------------------------------------------------------------------------------------------------- -->
+
+
+   <!-- ------ Gamelist ------ -->
+
+
+
+   <view name="basic,detailed">
+
+      <image name="background" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>${spacerImage}</path>
+         <tile>true</tile>
+         <color>${backgroundColor}</color>
+         <zIndex>1</zIndex>
+      </image>
+
+      <image name="gamelist-background" extra="true">
+         <origin>0 0</origin>
+         <path>${spacerImage}</path>
+         <tile>true</tile>
+         <color>${gamelistListTextlistBackgroundColor}</color>
+         <zIndex>5</zIndex>
+      </image>
+
+      <image name="grid-bg-image" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>0.5 1</size>
+         <path>./_inc/images/gamelist_bg.png</path>
+         <tile>true</tile>
+         <saturation>0</saturation>
+         <color>ffffff0f</color>
+         <zIndex>5</zIndex>
+      </image>
+
+      <image name="logoBG_fade" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>0.5 0.35</size>
+         <path>${spacerImage}</path>
+         <tile>true</tile>
+         <gradientType>vertical</gradientType>
+         <color>${gamelistListTextlistBackgroundColor}</color>
+         <colorEnd>${gamelistListTextlistBackgroundColor}00</colorEnd>
+         <zIndex>5</zIndex>
+      </image>
+
+      <textlist name="gamelist">
+         <origin>0 0</origin>
+         <alignment>left</alignment>
+         <x>0.0</x>
+         <y>0.163</y>
+         <h ifHelpPrompts="true">0.75</h>
+         <h ifHelpPrompts="false">0.815</h><!-- 336 -->
+         <!-- small font -->
+         <fontSize ifSubset="fonts:small">0.033333333333333</fontSize>
+         <lines ifSubset="fonts:small" ifHelpPrompts="true">11</lines>
+         <lines ifSubset="fonts:small" ifHelpPrompts="false">13</lines>
+         <!-- default font -->
+         <fontSize ifSubset="fonts:default">0.041666666666667</fontSize>
+         <lines ifSubset="fonts:default" ifHelpPrompts="true">9</lines>
+         <lines ifSubset="fonts:default" ifHelpPrompts="false">11</lines>
+         <!-- large font -->
+         <fontSize ifSubset="fonts:large">0.05</fontSize><!-- 24 -->
+         <lines ifSubset="fonts:large" ifHelpPrompts="true">7</lines>
+         <lines ifSubset="fonts:large" ifHelpPrompts="false">9</lines>
+         <alignment>left</alignment>
+         <fontPath>${fontBold}</fontPath>
+         <selectorColor>${gamelistListTextlistSelectorColor}</selectorColor>
+         <selectedColor>${gamelistListTextlistSelectedColor}</selectedColor>
+         <primaryColor>${gamelistListTextlistUnselectedColor}</primaryColor>
+         <secondaryColor>${gamelistListTextlistUnselectedColor}</secondaryColor>
+         <scrollSound>./_inc/sounds/scroll.wav</scrollSound>
+         <secondaryColor>000000</secondaryColor>
+         <scrollbarColor>${gameListScrollbarColor}</scrollbarColor>
+         <scrollbarSize>0.015</scrollbarSize>
+         <scrollbarCorner>0.5</scrollbarCorner>
+         <scrollbarAlignment>outer right</scrollbarAlignment>
+         <storyboard> 
+            <animation property="y" from="1.0" begin="0" duration="450" mode="easeOut"/>           
+            <animation event="activate" property="opacity" from="0" to="1" duration="500" mode="easeOut"/>
+         </storyboard>
+         <zIndex>6</zIndex>
+      </textlist>
+
+      <image name="gamelist-mask" extra="true">
+         <path>${spacerImage}</path>
+         <origin>1 0</origin>
+         <pos>0.5 0</pos>
+         <size>0.1 1</size>
+         <tile>true</tile>
+         <gradientType>horizontal</gradientType>
+         <color>${gamelistListTextlistBackgroundColor}00</color>
+         <colorEnd>${gamelistListTextlistBackgroundColor}</colorEnd>
+         <zIndex>7</zIndex>
+      </image>
+
+      <image ifSubset="system-logos:default|custom" name="logo">
+         <y>0.0775</y>
+         <origin>0.5 0.5</origin>
+         <color>${gamelistListLogoColor}</color>
+         <maxSize>0.359375 0.104166666666667</maxSize>
+         <path>./_inc/systems/logos-default/${system.theme}.svg</path>
+         <path ifSubset="system-logos:custom">${themeCustomizationsPath}logos/${system.theme}.svg</path>
+         <path ifSubset="system-logos:custom">${themeCustomizationsPath}logos/${system.theme}.png</path>
+         <zIndex>8</zIndex>
+      </image>
+
+      <text name="logoText">
+         <fontSize>0.05</fontSize>
+         <fontPath>${fontLogo}</fontPath>
+         <forceUppercase>true</forceUppercase>
+         <size>0.5 0</size>
+         <lineSpacing>1</lineSpacing>
+         <alignment>center</alignment>
+         <origin>0.5 0.5</origin>
+         <y>0.0775</y>
+         <color>${gamelistListLogoColor}</color>
+         <zIndex>8</zIndex>
+      </text>
+   </view>
+
+
+
+
+
+   <!-- -------------------------------------------------------------------------------------------------------- -->
+
+
+   <view name="basic">
+      <text name="logoText">
+         <x>0.5</x>
+         <y>0.0785</y>
+         <alignment>center</alignment>
+         <size>0.5 0.2</size>
+      </text>
+
+      <textlist name="gamelist">
+         <origin>0 0</origin>
+         <alignment>center</alignment>
+      </textlist>
+
+      <image name="gamelist-background" extra="true">
+         <size>1 1</size>
+      </image>
+
+      <image name="gamelist-mask" extra="true">
+         <visible>0</visible>
+      </image>
+
+      <image name="grid-bg-image" extra="true">
+         <size>1 1</size>
+         <visible>1</visible>
+      </image>
+
+      <image name="logoBG_fade" extra="true">
+         <size>1 0.35</size>
+      </image>
+   </view>
+
+   <view name="detailed">
+      <image name="logo">
+         <pos>0.25 0.135416666666667</pos>
+      </image>
+
+      <text name="logoText">
+         <pos>0.25 0.135416666666667</pos>
+      </text>
+
+      <textlist name="gamelist">
+         <w>0.5</w>
+         <horizontalMargin>0.025</horizontalMargin>
+         <!-- <size>0.390625 0.725</size> -->
+      </textlist>
+
+      <image name="gamelist-background" extra="true">
+         <size>0.5 1</size>
+      </image>
+   </view>
+
+
+   <!-- -------------------------------------------------------------------------------------------------------- -->
+
+
+   <!-- ------ Metadata for Games ------ -->
+
+
+   <view name="detailed,gamecarousel,grid">
+          
+      <text name="md_lbl_rating,md_lbl_developer,md_developer,md_lbl_publisher,md_publisher,md_lbl_playcount,md_playcount,md_lbl_lastplayed,md_lbl_players,md_players,md_lbl_releasedate,md_lbl_genre,md_genre,md_name,md_lbl_gametime,md_gametime,alt_gametime,alt_lastplayed,alt_releasedate,alt_publisher">
+         <origin>0 0.5</origin>
+         <pos>1 1</pos>
+         <fontPath>${fontBold}</fontPath>
+         <alignment>left</alignment>
+         <color>${gamelistListMetadataColor}</color>
+         <forceUppercase>true</forceUppercase>
+      </text>
+
+      <datetime name="md_releasedate,md_lastplayed">
+         <origin>0 0.5</origin>
+         <pos>1 1</pos>
+         <fontPath>${fontBold}</fontPath>
+         <color>${gamelistListMetadataColor}</color>
+         <alignment>left</alignment>
+         <forceUppercase>true</forceUppercase>
+         <format>%Y-%m-%d</format>
+      </datetime>
+
+      <rating name="md_rating">
+         <origin>0 0.5</origin>
+         <pos>1 1</pos>
+         <color>${gamelistListRatingColor}</color>
+         <filledPath>./_inc/images/icon-star-filled.svg</filledPath>
+         <unfilledPath>./_inc/images/icon-star-unfilled.svg</unfilledPath>
+      </rating>
+
+      <image name="md_releasedate_icon,md_players_icon,md_developer_icon,md_publisher_icon,md_genre_icon,md_lastplayed_icon,md_playcount_icon,md_gametime_icon" extra="true">
+         <origin>0 0.5</origin>
+         <pos>1 1</pos>
+         <color>${gamelistListMetadataIconColor}</color>
+      </image>
+
+      <image name="md_releasedate_icon">
+         <path>./_inc/images/icon-releasedate.svg</path>
+      </image>
+      <image name="md_players_icon">
+         <path>./_inc/images/icon-players.svg</path>
+      </image>
+      <image name="md_playcount_icon">
+         <path>./_inc/images/icon-playcount.svg</path>
+      </image>
+      <image name="md_gametime_icon">
+         <path>./_inc/images/icon-gametime.svg</path>
+      </image>
+      <image name="md_lastplayed_icon">
+         <path>./_inc/images/icon-lastplayed.svg</path>
+      </image>
+      <image name="md_genre_icon">
+         <path>./_inc/images/icon-genre.svg</path>
+      </image>
+      <image name="md_developer_icon">
+         <path>./_inc/images/icon-developer.svg</path>
+      </image>
+      <image name="md_publisher_icon">
+         <path>./_inc/images/icon-publisher.svg</path>
+      </image>
+
+      <image ifSubset="gamelist-view-style:metadata-on|metadata-on-immersive|metadata-off" name="game-metadata-background" extra="true">
+         <origin>0 0</origin>
+         <path>${spacerImage}</path>
+         <tile>true</tile>
+         <color>${gamelistListMetadataBackgroundColor}</color>
+         <!-- <color>E5782F</color> -->
+         <zIndex>2</zIndex>
+      </image>
+
+   </view>
+
+<!-- ----------------------------------------------------------------------------------------------------- -->
+
+<!--    <view ifSubset="distribution:batocera|retrobat" name="grid">
+      <image name="background" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>${spacerImage}</path>
+         <tile>true</tile>
+         <color>${backgroundColor}</color>
+         <zIndex>1</zIndex>
+      </image>
+
+      <image name="gamelist-background" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>0.5 1</size>
+         <path>${spacerImage}</path>
+         <tile>true</tile>
+         <color>${gamelistListTextlistBackgroundColor}</color>
+         <zIndex>3</zIndex>
+      </image>
+
+      <image name="grid-bg-image" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>0.5 1</size>
+         <path>./_inc/images/gamelist_bg.png</path>
+         <tile>true</tile>
+         <saturation>0</saturation>
+         <color>ffffff0f</color>
+         <zIndex>3</zIndex>
+      </image>      
+
+      <image name="logoBG_fade" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>0.5 0.35</size>
+         <path>${spacerImage}</path>
+         <tile>true</tile>
+         <gradientType>vertical</gradientType>
+         <color>${gamelistListTextlistBackgroundColor}</color>
+         <colorEnd>${gamelistListTextlistBackgroundColor}00</colorEnd>
+         <zIndex>3</zIndex>
+      </image> 
+
+      <imagegrid name="gamegrid">
+         <imageSizeMode>minSize</imageSizeMode>
+         <cellProportion>0.8</cellProportion>
+         <margin>0.015</margin>
+         <pos>0.0 0.15</pos>
+         <size>0.5 0.8</size>
+         <gameImage>./_inc/images/no-art-image.png</gameImage>
+         <padding>7 5 7 5</padding>   
+         <imageSource>cover</imageSource>
+         <saturation>0</saturation>
+         <color ifSubset="color-scheme:gb-pocket|dos-dweeb">${systemArtColor}</color>
+         <scrollbarColor>${gameListScrollbarColor}</scrollbarColor>
+         <scrollbarCorner>0.25</scrollbarCorner>
+         <scrollbarSize>0.015</scrollbarSize>
+         <scrollbarAlignment>outer right</scrollbarAlignment>
+         <autoLayout ifSubset="aspect-ratio:16-10">3 0</autoLayout>
+         <autoLayout ifSubset="aspect-ratio:16-9">3 0</autoLayout>
+         <autoLayout ifSubset="aspect-ratio:1-1">2 0</autoLayout>
+         <autoLayout ifSubset="aspect-ratio:4-3">2 0</autoLayout>
+         <autoLayoutSelectedZoom>1.1</autoLayoutSelectedZoom>
+         <zIndex>4</zIndex>
+         <storyboard>
+            <animation property="y" from="2" to="0.15" begin="0" duration="450" mode="easeOut"/>
+         </storyboard>
+      </imagegrid>
+
+      <gridtile name="default">
+         <backgroundColor>00000007</backgroundColor>
+         <backgroundCornerSize>0</backgroundCornerSize>
+         <backgroundImage>./_inc/images/square-bg.png</backgroundImage>
+         <selectionMode>image</selectionMode>
+         <imageSizeMode>maxSize</imageSizeMode>
+         <padding>5 5</padding>
+      </gridtile>
+
+      <image name="gridtile.image">
+         <linearSmooth>true</linearSmooth>
+         <scale>0.9</scale>
+         <roundCorners>15</roundCorners>
+         <saturation ifSubset="color-scheme:gb-pocket|dos-dweeb">0</saturation>
+         <color ifSubset="color-scheme:gb-pocket|dos-dweeb">${systemArtColor}9f</color>
+      </image>
+
+
+      <image ifSubset="gamelist-view-style:metadata-on|metadata-on-immersive" name="bg-4-video-grid" extra="true">
+         <path>${spacerImage}</path>
+         <tile>true</tile>
+         <origin>0.5</origin>
+         <pos>0.75 0.33</pos>
+         <maxSize>0.45</maxSize>
+         <maxSize ifSubset="gamelist-view-style:metadata-on-immersive">0.8</maxSize>
+         <color>${helpBackgroundColor}</color>
+         <color ifSubset="color-scheme:gb-pocket|dos-dweeb">${gamelistListMetadataBackgroundColor}</color>
+         <y ifSubset="gamelist-view-style:metadata-off">0.692 </y>
+         <y ifSubset="gamelist-view-style:metadata-off-immersive">0.5</y>
+         <visible>empty({game:image})</visible>
+         <opacity>0.8</opacity>
+         <maxSize ifSubset="gamelist-view-style:metadata-off-immersive">1.4 1.4</maxSize>
+         <visible ifSubset="gamelist-view-style:metadata-on-immersive">0</visible>
+         <zIndex>3</zIndex>
+      </image>
+
+
+      <text ifSubset="gamelist-view-style:metadata-on|metadata-on-immersive" name="gridtile-no-image" extra="true">
+         <pos>0.535 0.115</pos>
+         <text>{game:name}</text>
+         <size>0.43</size>
+         <alignment>center</alignment>
+         <fontPath>${fontLogo}</fontPath>
+         <fontSize>0.05</fontSize>
+         <lineSpacing>1.22</lineSpacing>
+         <lineSpacing ifSubset="color-scheme:gb-pocket">1.62</lineSpacing>
+         <color>${systemLogoColor}</color>
+         <glowColor>${systemCarouselBackgroundColor}12</glowColor>
+         <glowSize>5</glowSize> 
+         <glowOffset>3</glowOffset>
+         <visible>empty({game:image})</visible>
+
+         <storyboard ifSubset="gamelist-video:on" event="activate">
+            <animation property="scale" from="0" to="1" begin="0" duration="350" mode="easeOut"/>
+            <animation enabled="!exists({game:marquee}) && exists({game:video})" property="opacity" from="1" to="0" begin="1000" duration="1900" mode="EaseInOut"/>
+         </storyboard>
+
+         <storyboard ifSubset="gamelist-video:off" event="activate">
+            <animation property="scale" from="0" to="1" begin="0" duration="350" mode="easeOut"/>
+         </storyboard>
+      </text>
+
+      <ninepatch name="gridtile.background:selected">
+         <color>${gamelistListTextlistSelectedColor}</color>
+         <animateColor>${gamelistListTextlistSelectedColor}00</animateColor>
+         <animateColorTime>800</animateColorTime>
+         <scale>0.925</scale>
+      </ninepatch>
+
+      <image ifSubset="system-logos:default|custom" name="logo">
+         <origin>0.5 0.5</origin>
+         <pos>0.25 0.075</pos>
+         <color>${gamelistListLogoColor}</color>
+         <maxSize>0.359375 0.104166666666667</maxSize>
+         <path>./_inc/systems/logos-default/${system.theme}.svg</path>
+         <path ifSubset="system-logos:custom">${themeCustomizationsPath}logos/${system.theme}.svg</path>
+         <path ifSubset="system-logos:custom">${themeCustomizationsPath}logos/${system.theme}.png</path>
+         <zIndex>8</zIndex>
+      </image>
+
+      <text name="logoText">
+         <origin>0.5 0.5</origin>
+         <pos>0.25 0.075</pos>
+         <fontPath>${fontLogo}</fontPath>
+         <forceUppercase>true</forceUppercase>
+         <size>0.45 0</size>
+         <lineSpacing>1</lineSpacing>
+         <alignment>center</alignment>
+         <y>0.0775</y>
+         <color>${gamelistListLogoColor}</color>
+         <zIndex>8</zIndex>
+      </text>
+   </view> -->
+
+<!-- grid ROcknix -->
+
+   <view name="grid">
+
+      <image name="background" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>${spacerImage}</path>
+         <tile>true</tile>
+         <color>${backgroundColor}</color>
+         <zIndex>1</zIndex>
+      </image>
+
+      <image name="gamelist-background" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>0.5 1</size>
+         <path>${spacerImage}</path>
+         <tile>true</tile>
+         <color>${gamelistListTextlistBackgroundColor}</color>
+         <zIndex>5</zIndex>
+      </image>
+
+      <image name="grid-bg-image" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>0.5 1</size>
+         <path>./_inc/images/gamelist_bg.png</path>
+         <path ifSubset="color-scheme:gb-pocket|dos-dweeb">./_inc/images/gamelist_bg_inv.png</path>
+         <tile>true</tile>
+         <saturation>0</saturation>
+         <color>ffffff0f</color>
+         <color ifSubset="color-scheme:gb-pocket|dos-dweeb">ffffff1f</color>
+         <zIndex>5</zIndex>
+      </image>
+
+      <image name="logoBG_fade" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>0.5 0.35</size>
+         <path>${spacerImage}</path>
+         <tile>true</tile>
+         <gradientType>vertical</gradientType>
+         <color>${gamelistListTextlistBackgroundColor}</color>
+         <colorEnd>${gamelistListTextlistBackgroundColor}00</colorEnd>
+         <zIndex>5</zIndex>
+      </image> 
+
+      <imagegrid name="gamegrid">
+         <systemNameSuffix>true</systemNameSuffix>
+         <!-- <pos>-0.01 0.067</pos>
+         <size>0.5 0.85</size> -->
+         <pos>-0.01 0.1275</pos>
+         <size>0.5 0.8</size>
+         <gameImage>./_inc/images/no-art-image.png</gameImage>
+         <imageSource>cover</imageSource>
+         <scrollDirection>vertical</scrollDirection>
+         <!-- <autoLayout>3 3</autoLayout> -->
+         <autoLayout ifSubset="aspect-ratio:16-10">3 2</autoLayout>
+         <autoLayout ifSubset="aspect-ratio:16-9">3 2</autoLayout>
+         <autoLayout ifSubset="aspect-ratio:1-1">2 3</autoLayout>
+         <autoLayout ifSubset="aspect-ratio:4-3">2 2</autoLayout>       
+         <autoLayoutSelectedZoom ifSubset="gl-grid-rom-highlight:outline">1</autoLayoutSelectedZoom>
+         <autoLayoutSelectedZoom ifSubset="gl-grid-rom-highlight:zoom">1.1</autoLayoutSelectedZoom>
+         <margin>0.00001 0.015</margin>
+         <padding>0.02 0.02 0 0</padding>
+         <animateSelection>false</animateSelection>
+         <scrollbarColor>${gameListScrollbarColor}</scrollbarColor>
+         <scrollbarCorner>0.25</scrollbarCorner>
+         <scrollbarSize>0.0175</scrollbarSize>
+         <scrollbarAlignment>outer right</scrollbarAlignment>
+         <maxlength>.5</maxlength>
+      </imagegrid>
+
+      <gridtile name="default">
+         <backgroundColor>0000001f</backgroundColor>
+         <selectionMode>image</selectionMode>
+      </gridtile>
+    
+      <text name="gridtile">
+         <!-- <color>ffffff</color> -->
+         <color>${gamelistListLogoColor}</color>
+         <backgroundColor>ffffff00</backgroundColor>
+         <fontPath ifSubset="color-scheme:gb-pocket|dos-dweeb">${fontRegular}</fontPath>
+         <fontSize ifSubset="color-scheme:gb-pocket|dos-dweeb">0.025</fontSize>
+         <fontSize>0.03</fontSize>
+         <alignment>center</alignment>
+         <size>.05 0.24</size>
+         <visible>false</visible>
+         <visible ifSubset="gl-grid-rom-title:on">true</visible>
+      </text>
+
+      <image name="gridtile.image">
+         <!-- <linearSmooth>true</linearSmooth>
+         <scale>0.9</scale>
+         <roundCorners>15</roundCorners> -->
+         <saturation ifSubset="color-scheme:gb-pocket|dos-dweeb">0</saturation>
+         <color ifSubset="color-scheme:gb-pocket|dos-dweeb">${systemArtColor}9f</color>
+      </image>
+    
+      <text name="gridtile_selected">
+         <!-- <color>ffffff</color> -->
+         <color>${gamelistListLogoColor}</color>
+         <fontPath ifSubset="color-scheme:gb-pocket|dos-dweeb">${fontRegular}</fontPath>
+         <glowColor>ffffff00</glowColor>
+         <glowSize>0</glowSize>
+         <visible>false</visible>
+         <visible ifSubset="gl-grid-rom-title:on">true</visible>
+      </text>
+
+      <gridtile ifSubset="gl-grid-rom-highlight:outline" name="selected">
+         <backgroundCenterColor>ffffff00</backgroundCenterColor>
+         <backgroundEdgeColor>${gamelistListRatingColor}9f</backgroundEdgeColor>
+         <imageColor>ffffff</imageColor>
+      </gridtile>
+
+      <ninepatch ifSubset="gl-grid-rom-highlight:outline" name="gridtile.background:selected">
+         <color>${gamelistListTextlistSelectedColor}</color>
+         <animateColor>${gamelistListTextlistSelectedColor}00</animateColor>
+         <animateColorTime>800</animateColorTime>
+         <scale>0.925</scale>
+      </ninepatch>
+
+      <image ifSubset="system-logos:default|custom" name="logo">
+         <origin>0.5 0.5</origin>
+         <pos>0.25 0.075</pos>
+         <color>${gamelistListLogoColor}</color>
+         <maxSize>0.359375 0.104166666666667</maxSize>
+         <path>./_inc/systems/logos-default/${system.theme}.svg</path>
+         <path ifSubset="system-logos:custom">${themeCustomizationsPath}logos/${system.theme}.svg</path>
+         <path ifSubset="system-logos:custom">${themeCustomizationsPath}logos/${system.theme}.png</path>
+         <zIndex>8</zIndex>
+      </image>
+
+      <text name="logoText">
+         <origin>0.5 0.5</origin>
+         <pos>0.25 0.075</pos>
+         <fontPath>${fontLogo}</fontPath>
+         <forceUppercase>true</forceUppercase>
+         <size>0.5 0</size>
+         <lineSpacing>1</lineSpacing>
+         <alignment>center</alignment>
+         <y>0.0775</y>
+         <color>${gamelistListLogoColor}</color>
+         <zIndex>8</zIndex>
+      </text>
+   </view>
+
+
+<!-- ----------------------------------------------------------------------------------------------------- -->
+
+
+   <view name="gamecarousel">
+
+      <image name="md_marquee,no_marquee" extra="true">
+         <visible>0</visible>
+         <visible ifSubset="gamelist-view-style:metadata-off|metadata-off-immersive">1</visible>
+      </image>
+
+      <image name="background" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>${spacerImage}</path>
+         <tile>true</tile>
+         <color>${backgroundColor}</color>
+         <zIndex>1</zIndex>
+      </image>
+
+      <image name="gamelist-background" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>0.5 1</size>
+         <path>${spacerImage}</path>
+         <tile>true</tile>
+         <color>${gamelistListTextlistBackgroundColor}</color>
+         <zIndex>5</zIndex>
+      </image>
+
+      <image name="grid-bg-image" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>0.5 1</size>
+         <path>./_inc/images/gamelist_bg.png</path>
+         <tile>true</tile>
+         <saturation>0</saturation>
+         <color>ffffff0f</color>
+         <zIndex>5</zIndex>
+      </image>
+
+      <gamecarousel name="gamecarousel">
+         <origin>0.5</origin>
+         <pos>0.25 0.5</pos>
+         <type>vertical_wheel</type>
+         <size>1 1</size>
+         <logoScale>1.75</logoScale>
+         <color>00000000</color>
+         <maxLogoCount>30</maxLogoCount>
+         <logoRotation>8</logoRotation>
+         <logoRotationOrigin>-5 0.5</logoRotationOrigin>
+         <logoAlignment>center</logoAlignment>   
+         <imageSource>marquee</imageSource>
+         <lineSpacing>1.2</lineSpacing>
+         <scrollbarColor>${gameListScrollbarColor}</scrollbarColor>
+         <scrollbarCorner>0.25</scrollbarCorner>
+         <scrollbarAlignment>outer right</scrollbarAlignment>
+         <scrollbarSize>0.5</scrollbarSize>
+         <zIndex>6</zIndex>
+      </gamecarousel>
+
+      <image name="gamecarousel.image">
+         <saturation ifSubset="color-scheme:gb-pocket|dos-dweeb">0</saturation>
+         <color ifSubset="color-scheme:gb-pocket|dos-dweeb">${systemArtColor}</color>
+      </image>
+
+      <image name="logoBG_fade" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>0.5 0.35</size>
+         <path>${spacerImage}</path>
+         <tile>true</tile>
+         <gradientType>vertical</gradientType>
+         <color>${gamelistListTextlistBackgroundColor}</color>
+         <colorEnd>${gamelistListTextlistBackgroundColor}00</colorEnd>
+         <zIndex>7</zIndex>
+      </image>
+
+      <image name="logoBG_fade_btm" extra="true">
+         <origin>0 1</origin>
+         <pos>0 1</pos>
+         <size>0.5 0.35</size>
+         <path>${spacerImage}</path>
+         <tile>true</tile>
+         <gradientType>vertical</gradientType>
+         <color>${gamelistListTextlistBackgroundColor}00</color>
+         <colorEnd>${gamelistListTextlistBackgroundColor}</colorEnd>
+         <zIndex>7</zIndex>
+      </image>
+
+      <video name="md_video">
+         <visible>0</visible>
+      </video>
+
+      <image name="md_image">
+         <visible>0</visible>
+      </image>
+
+      <image ifSubset="system-logos:default|custom" name="logo">
+         <origin>0.5 0.5</origin>
+         <pos>0.25 0.075</pos>
+         <color>${gamelistListLogoColor}</color>
+         <maxSize>0.359375 0.104166666666667</maxSize>
+         <path>./_inc/systems/logos-default/${system.theme}.svg</path>
+         <path ifSubset="system-logos:custom">${themeCustomizationsPath}logos/${system.theme}.svg</path>
+         <path ifSubset="system-logos:custom">${themeCustomizationsPath}logos/${system.theme}.png</path>
+         <zIndex>8</zIndex>
+      </image>
+
+      <image name="gamecarouselLogo">
+         <saturation ifSubset="color-scheme:gb-pocket|dos-dweeb">0</saturation>
+         <color ifSubset="color-scheme:gb-pocket|dos-dweeb">${systemArtColor}9f</color>
+      </image>
+
+      <text name="gamecarouselLogoText">
+         <color>${systemLogoColor}</color>
+         <!-- <color>${gamelistListTextlistUnselectedColor}</color> -->
+         <!-- <selectedColor>${gamelistListTextlistSelectedColor}</selectedColor>
+         <primaryColor>${gamelistListTextlistUnselectedColor}</primaryColor>
+         <secondaryColor>${gamelistListTextlistUnselectedColor}</secondaryColor> -->
+         <visible ifSubset="color-scheme:gb-pocket|dos-dweeb">1</visible>
+         <fontPath>${fontLogo}</fontPath>
+         <fontSize>0.05</fontSize>
+         <lineSpacing>1.25</lineSpacing>
+      </text>
+
+      <text name="logoText">
+         <origin>0.5 0.5</origin>
+         <pos>0.25 0.075</pos>
+         <fontPath>${fontLogo}</fontPath>
+         <forceUppercase>true</forceUppercase>
+         <size>0.5 0</size>
+         <lineSpacing>1</lineSpacing>
+         <alignment>center</alignment>
+         <y>0.0775</y>
+         <color>${gamelistListLogoColor}</color>
+         <zIndex>8</zIndex>
+      </text>
+
+   </view>
+
+
+<!-- ----------------------------------------------------------------------------------------------------- -->
+
+
+   <!-- ------ metadata on ------ -->
+
+   <!-- ------ metadata stats ------ -->
+   <view ifSubset="gamelist-view-style:metadata-on|metadata-on-immersive" name="detailed,gamecarousel,grid">
+
+      <!-- ------- STORYBOARD RATING/LAST PLAYED DATE ------- -->
+
+      <text ifSubset="distribution:batocera|retrobat" name="alt_gametime,alt_releasedate,alt_lastplayed,alt_publisher,md_name">
+         <fontPath>${fontBold}</fontPath>
+         <fontSize>0.029166666666667</fontSize>
+         <fontSize ifSubset="color-scheme:gb-pocket">0.027</fontSize>
+         <alignment>left</alignment>
+      </text>
+
+      <image ifSubset="distribution:batocera|retrobat" name="md_publisher_icon,md_lastplayed_icon">
+         <origin>0 0.5</origin>
+         <pos>0.546875 0.613</pos>
+         <size>0.03125 0.041666666666667</size>
+      </image>
+
+      <rating ifSubset="distribution:batocera|retrobat" name="md_rating">
+         <origin>0 0.5</origin>
+         <pos>0.546875 0.613</pos>
+         <size>0 0.041666666666667</size>
+         <visible ifSubset="gamelist-view-style:metadata-on-immersive">false</visible>
+         <storyboard event="activate" repeat="forever">
+            <animation property="opacity" to="0"/>
+            <animation property="opacity" from="0" to="1" duration="350" mode="easeOut"/>
+            <animation property="opacity" from="1" to="0" begin="4000" duration="350" mode="easeOut"/>
+            <animation property="opacity" to="0" begin="4350" duration="14100"/>
+         </storyboard>
+      </rating>
+
+      <image ifSubset="distribution:batocera|retrobat" name="md_publisher_icon">
+         <visible ifSubset="gamelist-view-style:metadata-on-immersive">false</visible>
+         <storyboard event="activate" repeat="forever">
+            <animation property="opacity" to="0"/>
+            <animation property="opacity" from="0" to="1" begin="4350" duration="350" mode="easeOut"/>
+            <animation property="opacity" from="1" to="0" begin="8700" duration="350" mode="easeOut"/>
+            <animation property="opacity" to="0" begin="9050" duration="9400"/>
+         </storyboard>
+      </image>
+
+      <text ifSubset="distribution:batocera|retrobat" name="alt_publisher" extra="true">
+         <text>empty({game:publisher}) ? "UNKNOWN" : {game:publisher}</text>
+         <pos>0.59375 0.613</pos>
+         <size>0.4 0.041666666666667</size>
+         <autoScroll>horizontal</autoScroll>
+         <autoScrollSpeed>50</autoScrollSpeed>
+         <autoScrollDelay>0</autoScrollDelay>
+         <visible ifSubset="gamelist-view-style:metadata-on-immersive">false</visible>
+         <storyboard event="activate" repeat="forever">
+            <animation property="opacity" to="0"/>
+            <animation property="opacity" from="0" to="1" begin="4350" duration="350" mode="easeOut"/>
+            <animation property="opacity" from="1" to="0" begin="8700" duration="350" mode="easeOut"/>
+            <animation property="opacity" to="0" begin="9050" duration="9400"/>
+         </storyboard>
+      </text>
+
+      <image ifSubset="distribution:batocera|retrobat" name="md_lastplayed_icon">
+         <visible ifSubset="gamelist-view-style:metadata-on-immersive">false</visible>
+         <storyboard event="activate" repeat="forever">
+            <animation property="opacity" to="0"/>
+            <animation property="opacity" from="0" to="1" begin="9050" duration="350" mode="easeOut"/>
+            <animation property="opacity" from="1" to="0" begin="13400" duration="350" mode="easeOut"/>
+            <animation property="opacity" to="0" begin="13750" duration="4700"/>
+         </storyboard>
+      </image>
+
+      <text ifSubset="distribution:batocera|retrobat" name="alt_lastplayed" extra="true">
+         <text>empty({game:lastplayed}) || {game:lastplayed} == "01/01/70" || {game:lastplayed} == "01/01/1970" ? translate("never") : {game:lastplayed}</text>
+         <pos>0.59375 0.613</pos>
+         <size>0.1875 0.041666666666667</size>
+         <visible ifSubset="gamelist-view-style:metadata-on-immersive">false</visible>
+         <storyboard event="activate" repeat="forever">
+            <animation property="opacity" to="0"/>
+            <animation property="opacity" from="0" to="1" begin="9050" duration="350" mode="easeOut"/>
+            <animation property="opacity" from="1" to="0" begin="13400" duration="350" mode="easeOut"/>
+            <animation property="opacity" to="0" begin="13750" duration="4700"/>
+         </storyboard>
+      </text>
+
+      <text ifSubset="distribution:batocera|retrobat" name="md_name">
+         <origin>0 0.5</origin>
+         <pos>0.546875 0.613</pos>
+         <size>0.375 0.041666666666667</size>
+         <autoScroll>horizontal</autoScroll>
+         <autoScrollSpeed>50</autoScrollSpeed>
+         <autoScrollDelay>0</autoScrollDelay>
+         <visible ifSubset="gamelist-view-style:metadata-on-immersive">false</visible>
+         <storyboard event="activate" repeat="forever">
+            <animation property="opacity" to="0"/>
+            <animation property="opacity" from="0" to="1" begin="13750" duration="350" mode="easeOut"/>
+            <animation property="opacity" from="1" to="0" begin="18100" duration="350" mode="easeOut"/>
+         </storyboard>
+      </text>
+
+      <!-- ------- STORYBOARD RELEASE DATE/PLAYED TIME ------- -->
+
+      <image ifSubset="distribution:batocera|retrobat" name="md_gametime_icon,md_releasedate_icon">
+         <origin>0 0.5</origin>
+         <pos>0.75781 0.613</pos>
+         <size>0.03125 0.041666666666667</size>
+      </image>
+
+      <text ifSubset="distribution:batocera|retrobat" name="alt_gametime,alt_releasedate">
+         <origin>0 0.5</origin>
+         <pos>0.80469 0.613</pos>
+         <size>0.1875 0.041666666666667</size>
+      </text>
+
+      <image ifSubset="distribution:batocera|retrobat" name="md_releasedate_icon">
+         <visible ifSubset="gamelist-view-style:metadata-on-immersive">false</visible>
+         <storyboard event="activate" repeat="forever">
+            <animation property="opacity" to="0"/>
+            <animation property="opacity" from="0" to="1" duration="350" mode="easeOut"/>
+            <animation property="opacity" from="1" to="0" begin="4000" duration="350" mode="easeOut"/>
+            <animation property="opacity" to="0" begin="4350" duration="14100"/>
+         </storyboard>
+      </image>
+
+       <text ifSubset="distribution:batocera|retrobat" name="alt_releasedate" extra="true">
+         <text>empty({game:releasedate}) || {game:releasedate} == "01/01/70" || {game:releasedate} == "01/01/1970" ? "UNKNOWN" : {game:releasedate}</text>
+         <visible ifSubset="gamelist-view-style:metadata-on-immersive">false</visible>
+         <storyboard event="activate" repeat="forever">
+            <animation property="opacity" to="0"/>
+            <animation property="opacity" from="0" to="1" duration="350" mode="easeOut"/>
+            <animation property="opacity" from="1" to="0" begin="4000" duration="350" mode="easeOut"/>
+            <animation property="opacity" to="0" begin="4350" duration="14100"/>
+         </storyboard>
+      </text>
+ 
+      <image ifSubset="distribution:batocera|retrobat" name="md_gametime_icon">
+         <visible ifSubset="gamelist-view-style:metadata-on-immersive">false</visible>
+         <storyboard event="activate" repeat="forever">
+            <animation property="opacity" to="0"/>
+            <animation property="opacity" from="0" to="1" begin="9050" duration="350" mode="easeOut"/>
+            <animation property="opacity" from="1" to="0" begin="13400" duration="350" mode="easeOut"/>
+            <animation property="opacity" to="0" begin="13750" duration="4700"/>
+         </storyboard>
+      </image>
+
+      <text ifSubset="distribution:batocera|retrobat" name="alt_gametime" extra="true">
+         <text>{game:gametime} == 0 ? "00:00" : formatseconds({game:gametime})</text>
+         <visible ifSubset="gamelist-view-style:metadata-on-immersive">false</visible>
+         <storyboard event="activate" repeat="forever">
+            <animation property="opacity" to="0"/>
+            <animation property="opacity" from="0" to="1" begin="9050" duration="350" mode="easeOut"/>
+            <animation property="opacity" from="1" to="0" begin="13400" duration="350" mode="easeOut"/>
+            <animation property="opacity" to="0" begin="13750" duration="4700"/>
+         </storyboard>
+      </text>
+
+      <!-- ----                                                                                            ---- -->
+
+
+      <!-- --- --- metadata game description --- --- -->
+
+      <text name="md_description">
+         <pos>0.525 0.666</pos>
+         <h ifHelpPrompts="false">0.31</h>
+         <y ifSubset="gamelist-view-style:metadata-on-immersive">0.6775</y>
+         <h ifSubset="gamelist-view-style:metadata-on-immersive" ifHelpPrompts="false">0.26</h>
+         <color>${gamelistListDescriptionColor}</color>
+         <size>0.45 0.25</size>
+         <fontPath>${fontRegular}</fontPath>
+         <fontSize>0.033333333333333</fontSize>
+         <lineSpacing>1.22</lineSpacing>
+      </text>
+
+      <image name="game-metadata-background" extra="true">
+         <origin>0 1</origin>
+         <pos>0.5 1</pos>
+         <size>0.5 0.354166666666667</size>
+         <zIndex>3</zIndex>
+      </image>
+
+      <!-- <image name="no-video" extra="true">
+         <path>${spacerImage}</path>
+         <tile>true</tile>
+         <origin>0.5</origin>
+         <pos>0.75 0.33</pos>
+         <maxSize>0.45</maxSize>
+         <color>F31525</color>
+         <visible>exists({game:video}) ? 0 : 1</visible>
+         <zIndex>3</zIndex>
+      </image> -->
+
+      <!-- <text name="vid-check" extra="true">
+         <text>stem({game:video})</text>
+         <origin>0.5</origin>
+         <alignment>center</alignment>
+         <pos>0.75 0.33</pos>
+         <fontPath>${fontRegular}</fontPath>
+         <fontSize>0.025</fontSize>
+         <lineSpacing>1.22</lineSpacing>
+         <color>F3A115</color>
+         <zIndex>3</zIndex>
+      </text> -->
+   </view>
+
+
+   <!-- -------------------------------------------------------------------------------------------------------- -->
+
+
+   <!-- ------ VIDEO and Game ARTWORK ------ -->
+
+   <view name="detailed,gamecarousel,grid">
+
+      <!-- Box Art Background image for metadata-off view -->
+      <image ifSubset="distribution:batocera|retrobat, gamelist-view-style:metadata-off" name="bg-boxart,bg-noboxart" extra="true">
+         <path>{game:thumbnail}</path>
+         <!-- <path>${spacerImage}</path> -->
+         <tile>false</tile>
+         <origin>0.5</origin>
+         <pos>0.75 0.5</pos>
+         <maxSize>1.1 2.0</maxSize>
+         <saturation>0</saturation>
+         <color ifSubset="color-scheme:gb-pocket|dos-dweeb">${systemArtColor}</color>
+
+         <storyboard>
+            <animation property="opacity" to="0.1"/>
+         </storyboard>
+
+         <storyboard ifSubset="color-scheme:gb-pocket|dos-dweeb">
+            <animation property="opacity" to="0.25"/>
+         </storyboard>
+         <zIndex>1</zIndex>
+      </image>
+
+      <image ifSubset="gamelist-view-style:metadata-off, distribution:batocera|retrobat" name="bg-noboxart" extra="true">
+         <path>./_inc/images/no-bgboxart.png</path>
+         <visible>0</visible>
+         <visible>empty({game:thumbnail}) || !exists({game:thumbnail})</visible>
+      </image>
+
+<!-- ----                                                                                            ---- -->
+
+
+      <!-- 4:3 ratio background plate for video and artwork -->
+      <image name="bg-4-video" extra="true">
+         <path>${spacerImage}</path>
+         <tile>true</tile>
+         <origin>0.5</origin>
+         <pos>0.75 0.33</pos>
+         <maxSize>0.45</maxSize>
+         <maxSize ifSubset="gamelist-view-style:metadata-on-immersive">0.8</maxSize>
+         <color>${helpBackgroundColor}</color>
+         <color ifSubset="color-scheme:gb-pocket|dos-dweeb">${gamelistListMetadataBackgroundColor}</color>
+         <!-- <visible ifSubset="color-scheme:gb-pocket|dos-dweeb" event="activate">0</visible> -->
+         <y ifSubset="gamelist-view-style:metadata-off">0.692 </y>
+         <!-- <y ifSubset="gamelist-view-style:metadata-off" ifHelpPrompts="false">0.759</y> -->
+         <y ifSubset="gamelist-view-style:metadata-off-immersive">0.5</y>
+         <maxSize ifSubset="gamelist-view-style:metadata-off-immersive">1.4 1.4</maxSize>
+         <visible ifSubset="gamelist-view-style:metadata-on-immersive">0</visible>
+         <zIndex>1</zIndex>
+      </image>
+
+
+      <!-- ----                                                                                            ---- -->
+
+      <!-- WARNING No -image png available -->
+      <image ifSubset="distribution:batocera|retrobat" name="no-image" extra="true">
+         <path ifSubset="gamelist-view-artwork:image">./_inc/images/no-art-image.png</path>
+         <path ifSubset="gamelist-view-artwork:boxart">./_inc/images/no-art-thumb.png</path>
+         <!-- <path ifSubset="gamelist-view-artwork:marquee">./_inc/images/no-art-marquee.png</path> -->
+         <origin>0.5</origin>
+         <pos>0.75 0.33</pos>
+         <maxSize>0.45</maxSize>
+         <saturation ifSubset="color-scheme:gb-pocket|dos-dweeb">${systemArtSaturation}</saturation>
+         <color ifSubset="color-scheme:gb-pocket|dos-dweeb">${systemArtColor}9f</color>
+         <visible ifSubset="gamelist-view-artwork:image">!exists({game:image})</visible>
+         <visible ifSubset="gamelist-view-artwork:boxart">!exists({game:thumbnail})</visible>
+         <!-- <visible ifSubset="gamelist-view-artwork:marquee">!exists({game:marquee})</visible> -->
+         
+         <y ifSubset="gamelist-view-style:metadata-off">0.692 </y>
+         <!-- <y ifSubset="gamelist-view-style:metadata-off" ifHelpPrompts="false">0.759</y> -->
+         <y ifSubset="gamelist-view-style:metadata-off-immersive">0.5</y>
+         <!-- <maxSize ifSubset="gamelist-view-style:metadata-off-immersive">1.4 1.4</maxSize> -->
+         <zIndex>2</zIndex>
+         <storyboard event="activate">
+            <animation property="scale" from="0" to="1" begin="0" duration="350" mode="easeOut"/>
+         </storyboard>
+         <storyboard event="deactivate">
+            <animation property="opacity" from="1" to="0" begin="0" duration="350" mode="easeIn"/>
+         </storyboard>         
+      </image>
+
+      <image name="no-image" ifSubset="gamelist-view-artwork:image, gamelist-video:on, distribution:batocera|retrobat" extra="true">
+         <storyboard event="activate">
+            <animation property="scale" from="0" to="1" begin="0" duration="350" mode="easeOut"/>
+            <animation enabled="!exists({game:image}) && exists({game:video})" property="opacity" from="1" to="0" begin="1000" duration="1900" mode="EaseInOut"/>
+         </storyboard>
+      </image>
+
+      <image name="no-image" ifSubset="gamelist-view-artwork:boxart, gamelist-video:on, distribution:batocera|retrobat" extra="true">
+         <storyboard event="activate">
+            <animation property="scale" from="0" to="1" begin="0" duration="350" mode="easeOut"/>
+            <animation enabled="!exists({game:thumbnail}) && exists({game:video})" property="opacity" from="1" to="0" begin="1000" duration="1900" mode="EaseInOut"/>
+         </storyboard>
+      </image>
+
+      <image name="no-image" ifSubset="gamelist-view-artwork:marquee, gamelist-video:on, distribution:batocera|retrobat" extra="true">
+         <storyboard event="activate">
+            <animation property="scale" from="0" to="1" begin="0" duration="350" mode="easeOut"/>
+            <animation enabled="!exists({game:marquee}) && exists({game:video})" property="opacity" from="1" to="0" begin="1000" duration="1900" mode="EaseInOut"/>
+         </storyboard>
+      </image>
+      
+      <!-- <image name="no-image" extra="true">
+         <storyboard event="activate">
+            <animation property="scale" from="0" to="1" begin="0" duration="350" mode="easeOut"/>
+            <animation property="opacity" from="1" to="0" duration="1900" mode="EaseInOut" autoReverse="1" repeat="forever"/>
+         </storyboard>
+      </image> -->
+
+      <!-- ----                                                                                            ---- -->
+
+      <!-- ------ VIDEO ------ -->
+
+      <!-- show -image -thumb -marquee png if no video -->
+      <image ifSubset="distribution:batocera|retrobat" name="no-video" extra="true">
+         <!-- <path>{game:thumbnail}</path> -->
+         <path ifSubset="gamelist-view-artwork:image">{game:image}</path>
+         <path ifSubset="gamelist-view-artwork:boxart">{game:thumbnail}</path>
+         <path ifSubset="gamelist-view-artwork:marquee">{game:marquee}</path>
+         <tile>false</tile>
+         <origin>0.5</origin>
+         <pos>0.75 0.33</pos>
+         <maxSize>0.45</maxSize>
+         <maxSize ifSubset="gamelist-view-artwork:marquee">0.42</maxSize>
+         <maxSize ifSubset="gamelist-view-style:metadata-on-immersive, gamelist-video:on|off, gamelist-view-artwork:image">0.8</maxSize>
+         <maxSize ifSubset="gamelist-view-style:metadata-on-immersive, gamelist-view-artwork:boxart">1.0</maxSize>
+         <!-- <color>F31525</color> -->
+         <visible>!exists({game:video})</visible>
+         <saturation ifSubset="color-scheme:gb-pocket|dos-dweeb">${systemArtSaturation}</saturation>
+         <color ifSubset="color-scheme:gb-pocket|dos-dweeb">${systemArtColor}9f</color>
+
+         <y ifSubset="gamelist-view-style:metadata-off">0.692 </y>
+         <!-- <y ifSubset="gamelist-view-style:metadata-off" ifHelpPrompts="false">0.759</y> -->
+         <y ifSubset="gamelist-view-style:metadata-off-immersive">0.5</y>
+         <maxSize ifSubset="gamelist-view-style:metadata-off-immersive">1.4 1.4</maxSize>
+
+         <storyboard event="activate">
+            <animation property="scale" from="0" to="1" begin="0" duration="350" mode="easeOut"/>
+         </storyboard>
+
+         <storyboard event="deactivate">
+            <animation property="opacity" from="1" to="0" begin="0" duration="350" mode="easeIn"/>
+         </storyboard>
+         <zIndex>2</zIndex>
+      </image>
+
+
+      <!-- animated zoom/fade of -image png to video -->
+      <image ifSubset="distribution:batocera|retrobat" name="yes-video" extra="true">
+         <path ifSubset="gamelist-view-artwork:image">{game:image}</path>
+         <path ifSubset="gamelist-view-artwork:boxart">{game:thumbnail}</path>
+         <path ifSubset="gamelist-view-artwork:marquee">{game:marquee}</path>
+         <tile>false</tile>
+         <origin>0.5</origin>
+         <pos>0.75 0.33</pos>
+         <maxSize>0.4</maxSize>
+         <maxSize ifSubset="gamelist-view-artwork:marquee">0.42</maxSize>
+         <maxSize ifSubset="gamelist-view-style:metadata-on-immersive, gamelist-video:on|off, gamelist-view-artwork:image">0.8</maxSize>
+         <maxSize ifSubset="gamelist-view-style:metadata-on-immersive, gamelist-view-artwork:boxart">1.0</maxSize>
+         <!-- <color>47CE38</color> -->
+         <visible>exists({game:video})</visible>
+         <saturation ifSubset="color-scheme:gb-pocket|dos-dweeb">${systemArtSaturation}</saturation>
+         <color ifSubset="color-scheme:gb-pocket|dos-dweeb">${systemArtColor}9f</color>
+
+         <y ifSubset="gamelist-view-style:metadata-off">0.692 </y>
+         <!-- <y ifSubset="gamelist-view-style:metadata-off" ifHelpPrompts="false">0.759</y> -->
+         <y ifSubset="gamelist-view-style:metadata-off-immersive">0.5</y>
+         <maxSize ifSubset="gamelist-view-style:metadata-off-immersive">1.4 1.4</maxSize>         
+         <maxSize ifSubset="gamelist-view-style:metadata-off-immersive, gamelist-view-artwork:marquee, gamelist-video:off">0.45</maxSize>
+
+         <storyboard ifSubset="gamelist-video:on" event="activate">
+            <animation property="scale" from="0" to="1" begin="0" duration="350" mode="easeOut"/>
+            <animation property="opacity" from="1" to="0" begin="2750" duration="500" mode="linear"/>
+         </storyboard>
+
+         <storyboard ifSubset="gamelist-video:on, gamelist-view-style:metadata-on-immersive|metadata-off-immersive, gamelist-view-artwork:boxart|image" event="activate">
+            <animation property="scale" from="0" to="1" begin="0" duration="350" mode="easeOut"/>
+            <animation property="x" from="0.74" to="0.77" duration="3250" mode="linear"/>
+            <animation property="y" from="0.45" to="0.31" duration="3250" mode="linear"/>
+            <animation property="opacity" from="1" to="0" begin="2750" duration="500" mode="linear"/>
+         </storyboard>
+
+         <storyboard ifSubset="gamelist-video:off" event="activate">
+            <animation property="scale" from="0" to="1" begin="0" duration="350" mode="easeOut"/>
+         </storyboard>
+
+         <storyboard event="deactivate">
+            <!-- <animation property="scale" from="1" to="0" begin="0" duration="350" mode="easeOut"/> -->
+            <animation property="opacity" from="1" to="0" begin="0" duration="350" mode="easeOut"/>
+         </storyboard>
+         <zIndex>2</zIndex>
+      </image>
+
+      <!-- video to be played -->
+      <video ifSubset="gamelist-video:on, distribution:batocera|retrobat" name="play-video" extra="true">
+         <path>{game:video}</path>
+         <origin>0.5</origin>
+         <pos>0.75 0.33</pos>
+         <maxSize>0.45</maxSize>
+         <maxSize ifSubset="gamelist-view-style:metadata-on-immersive">0.8</maxSize>
+         <delay>3</delay>         
+         <effect>none</effect>
+         <showSnapshotDelay>true</showSnapshotDelay>
+         <showSnapshotNoVideo>true</showSnapshotNoVideo>
+         <snapshotSource ifSubset="gamelist-view-artwork:boxart">thumbnail</snapshotSource>
+         <color ifSubset="gamelist-view-style:metadata-on-immersive">FFFFFFDD</color>
+         <color ifSubset="gamelist-view-style:metadata-off-immersive">FFFFFF99</color>
+         <visible>exists({game:video})</visible>
+         <loops>-1</loops>
+         
+         <!-- Gameboy Pocket Color extra -->
+         <!-- <delay ifSubset="color-scheme:gb-pocket|dos-dweeb">0</delay> -->
+         <showSnapshotDelay ifSubset="color-scheme:gb-pocket|dos-dweeb">false</showSnapshotDelay>
+         <showSnapshotNoVideo ifSubset="color-scheme:gb-pocket|dos-dweeb">false</showSnapshotNoVideo>
+         <saturation ifSubset="color-scheme:gb-pocket|dos-dweeb">${systemArtSaturation}</saturation>
+         <color ifSubset="color-scheme:gb-pocket|dos-dweeb">${systemArtColor}9f</color>
+         <loops ifSubset="color-scheme:gb-pocket|dos-dweeb">-1</loops>
+
+         <y ifSubset="gamelist-view-style:metadata-off">0.692 </y>>
+         <!-- <y ifSubset="gamelist-view-style:metadata-off" ifHelpPrompts="false">0.759</y> -->
+         <y ifSubset="gamelist-view-style:metadata-off-immersive">0.5</y>
+         <maxSize ifSubset="gamelist-view-style:metadata-off-immersive">1.4 1.4</maxSize>
+         <zIndex>2</zIndex>
+      </video>
+
+
+
+      <!-- ----                     ------------------------------------------------                        ---- -->
+
+
+
+      <!-- --- Status Icon Bar --- -->  
+
+      <image name="top-video-mask,top-video-mask-grad" extra="true">
+         <path>${spacerImage}</path>
+         <tile>true</tile>
+         <origin>0 0</origin>
+         <pos>0.5 0</pos>
+         <size>0.5 0.09</size>
+         <size ifSubset="gamelist-view-style:metadata-on-immersive|metadata-off-immersive">0.5 0.045</size>
+         <color>${gamelistListMetadataBackgroundColor}</color>
+         <visible ifSubset="gamelist-view-style:metadata-off">0</visible>
+         <zIndex>5</zIndex>
+      </image>
+
+      <image ifSubset="gamelist-view-style:metadata-on-immersive|metadata-off-immersive" name="top-video-mask-grad" extra="true">
+         <y>0.045</y>
+         <h>0.0675</h>
+         <h ifSubset="gamelist-view-style:metadata-off-immersive">0.2</h>
+         <colorEnd>${gamelistListMetadataBackgroundColor}00</colorEnd>
+      </image>
+
+
+      <!-- ----                     ------------------------------------------------                        ---- -->
+
+
+      <!-- --- Game Logo marquee --- -->
+
+      <image name="md_marquee,no_marquee" extra="true">
+         <origin>0.5</origin>
+         <maxSize>0.195 0.1</maxSize>
+
+         <origin ifSubset="gamelist-view-style:metadata-on|metadata-on-immersive">0 0</origin>
+         <pos ifSubset="gamelist-view-style:metadata-on">0.525 0.0225</pos>
+
+         <pos ifSubset="gamelist-view-style:metadata-on-immersive">0.515 0.0225</pos>
+         <maxSize ifSubset="gamelist-view-style:metadata-on-immersive">0.2 0.2</maxSize>
+
+         <pos ifSubset="gamelist-view-style:metadata-off">0.75 0.275</pos>
+         <maxSize ifSubset="gamelist-view-style:metadata-off">0.42 0.35</maxSize>
+         
+         <origin ifSubset="gamelist-view-style:metadata-off-immersive">0.5 0</origin>
+         <pos ifSubset="gamelist-view-style:metadata-off-immersive">0.75 0.25</pos>
+         <maxSize ifSubset="gamelist-view-style:metadata-off-immersive">0.45 0.3</maxSize>
+
+
+         <visible ifSubset="gamelist-view-artwork:marquee, gamelist-video:off">0</visible>
+         <color ifSubset="color-scheme:gb-pocket|dos-dweeb">${systemArtColor}9f</color>
+         <saturation ifSubset="color-scheme:gb-pocket|dos-dweeb">${systemArtSaturation}</saturation>
+
+         <storyboard event="activate">
+            <animation property="opacity" to="0"/>
+            <animation property="opacity" from="0" to="1" begin="100" duration="1000" mode="easeOut"/>
+         </storyboard>
+
+         <storyboard ifSubset="gamelist-view-style:metadata-on|metadata-on-immersive|metadata-off, gamelist-view-artwork:marquee, gamelist-video:on" event="activate">
+            <animation property="opacity" to="0"/>
+            <animation enabled="exists({game:video})" property="opacity" from="0" to="1" begin="3000" duration="2000" mode="easeOut"/>
+         </storyboard>
+
+         <storyboard ifSubset="gamelist-view-style:metadata-off-immersive" event="activate">
+            <animation property="opacity" to="0"/>
+            <animation property="opacity" from="0" to="1" begin="3000" duration="2000" mode="easeOut"/>
+            <animation property="opacity" from="1" to="0" begin="5000" duration="4000" mode="easeIn"/>
+            <animation property="scaleOrigin" to="-0.5 0" begin="9000"/>
+            <animation property="scale" to="0.5" begin="9000"/>
+            <animation property="pos" to="0.975 0.775" begin="9000"/>
+            <animation property="opacity" from="0" to="1" begin="10000" duration="1000" mode="easeOut"/>
+         </storyboard>
+
+      </image>
+
+      <text name="no_marquee" extra="true">
+         <text>{game:name}</text>
+         <size>0.43 0.30</size>
+         <alignment>center</alignment>
+         <fontPath>${fontLogo}</fontPath>
+         <fontSize>0.05</fontSize>
+         <!-- <fontSize ifSubset="color-scheme:gb-pocket|dos-dweeb">0.06</fontSize> -->
+         <lineSpacing>1.22</lineSpacing>
+         <lineSpacing ifSubset="color-scheme:gb-pocket">1.62</lineSpacing>
+         <color>${systemLogoColor}</color>
+         <glowColor>${systemCarouselBackgroundColor}12</glowColor>
+         <glowSize>5</glowSize> 
+         <glowOffset>3</glowOffset>
+         <visible>0</visible>
+         <visible ifSubset="gamelist-view-style:metadata-off|metadata-off-immersive">!exists({game:marquee})</visible>
+         <origin ifSubset="gamelist-view-artwork:marquee, gamelist-view-style:metadata-off-immersive, gamelist-video:off">0.5</origin>
+         <pos ifSubset="gamelist-view-artwork:marquee, gamelist-view-style:metadata-off-immersive, gamelist-video:off">0.75 0.5</pos>
+      </text>
+
+
+      <text name="no_marquee_video" extra="true">
+         <pos>0.535 0.115</pos>
+         <y ifSubset="gamelist-view-style:metadata-off">0.475</y>
+         <text>{game:name}</text>
+         <size>0.43</size>
+         <alignment>center</alignment>
+         <fontPath>${fontLogo}</fontPath>
+         <fontSize>0.05</fontSize>
+         <!-- <fontSize ifSubset="color-scheme:gb-pocket|dos-dweeb">0.05</fontSize> -->
+         <lineSpacing>1.22</lineSpacing>
+         <lineSpacing ifSubset="color-scheme:gb-pocket">1.62</lineSpacing>
+         <color>${systemLogoColor}</color>
+         <glowColor>${systemCarouselBackgroundColor}12</glowColor>
+         <glowSize>5</glowSize> 
+         <glowOffset>3</glowOffset>
+         <visible>0</visible>
+         <visible ifSubset="gamelist-view-style:metadata-on|metadata-on-immersive|metadata-off, gamelist-view-artwork:marquee">!exists({game:marquee})</visible>
+
+         <storyboard ifSubset="gamelist-video:on" event="activate">
+            <animation property="scale" from="0" to="1" begin="0" duration="350" mode="easeOut"/>
+            <animation enabled="!exists({game:marquee}) && exists({game:video})" property="opacity" from="1" to="0" begin="1000" duration="1900" mode="EaseInOut"/>
+         </storyboard>
+
+         <storyboard ifSubset="gamelist-video:off" event="activate">
+            <animation property="scale" from="0" to="1" begin="0" duration="350" mode="easeOut"/>
+         </storyboard>
+      </text>
+   </view>
+
+
+
+
+
+
+   <!-- -------------------------------------------------------------------------------------------------------- -->
+
+
+   <!-- ------ THE MENU SYSTEM ------ -->
+
+
+   <view name="menu">
+      <menuText name="menutitle">
+         <fontPath>${fontBold}</fontPath>
+         <fontSize>0.035</fontSize>
+         <color>${menuTitle}</color>
+      </menuText>
+      <menuText name="menufooter">
+         <fontPath>${fontLight}</fontPath>
+         <fontSize>0.025</fontSize>
+         <color>${menuTitleFooter}</color>
+      </menuText>
+      <menuText name="menutext">
+         <fontPath>${fontRegular}</fontPath>
+         <fontSize>0.035</fontSize>
+         <color>${menuUnSelectedColor}</color>
+         <separatorColor ifSubset="menu-separator:off">00000000</separatorColor>
+         <separatorColor ifSubset="menu-separator:on">${menuSelectorColor}66</separatorColor>
+         <selectedColor>${menuSelectedColor}</selectedColor>
+         <selectorColor>${menuSelectorColor}</selectorColor>
+      </menuText>
+      <menuTextSmall name="menutextsmall">
+         <fontPath>${fontLight}</fontPath>
+         <fontSize>0.025</fontSize>
+         <color>${menuTitleFooter}</color>
+      </menuTextSmall>
+      <menuGroup name="menugroup">
+         <fontPath>${fontBold}</fontPath>
+         <fontSize>0.0355</fontSize>
+         <color>${menuTitle}</color>
+         <separatorColor>${menuTitleFooter}</separatorColor>
+         <backgroundColor>00000000</backgroundColor>
+         <lineSpacing>2.5</lineSpacing>
+      </menuGroup>
+      <menuTextEdit name="menutextedit">
+         <inactive>./_inc/images/menu-textinput.png</inactive>
+         <active>./_inc/images/menu-textinput-active.png</active>
+      </menuTextEdit>
+      <menuBackground name="menubg">
+         <color>${menuBackgroundColor}</color>
+         <cornerSize>20 20</cornerSize>
+      </menuBackground>
+      <menuIcons name="menuicons">
+         <iconSystem>./_inc/images/menu-icon-system.svg</iconSystem>
+         <iconUpdates>./_inc/images/menu-icon-update.svg</iconUpdates>
+         <iconControllers>./_inc/images/menu-icon-controller.svg</iconControllers>
+         <iconGames>./_inc/images/menu-icon-games.svg</iconGames>
+         <iconUI>./_inc/images/menu-icon-ui.svg</iconUI>
+         <iconSound>./_inc/images/menu-icon-sound.svg</iconSound>
+         <iconNetwork>./_inc/images/menu-icon-network.svg</iconNetwork>
+         <iconScraper>./_inc/images/menu-icon-scraper.svg</iconScraper>
+         <iconAdvanced>./_inc/images/menu-icon-advanced.svg</iconAdvanced>
+         <iconQuit>./_inc/images/menu-icon-quit.svg</iconQuit>
+         <iconRetroachievements>./_inc/images/menu-icon-achievements.svg</iconRetroachievements>
+         <iconKodi>./_inc/images/menu-icon-kodi.svg</iconKodi>
+         <iconRestart>./_inc/images/menu-icon-restart.svg</iconRestart>
+         <iconShutdown>./_inc/images/menu-icon-shutdown.svg</iconShutdown>
+         <iconFastShutdown>./_inc/images/menu-icon-shutdown.svg</iconFastShutdown>
+      </menuIcons>
+   </view>
+
+
+
+
+
+
+
+
+   <!-- -------------------------------------------------------------------------------------------------------- -->
+
+
+
+
+
+
+
+
+
+
+   <!-- Aspect Ratio -->
+   <include ifSubset="aspect-ratio:16-9">./aspect-ratio-16-9.xml</include>
+   <include ifSubset="aspect-ratio:1-1">./aspect-ratio-1-1.xml</include>
+   <!-- <include ifSubset="aspect-ratio:3-2">./aspect-ratio-3-2.xml</include> -->
+
+   <include ifSubset="distribution:rocknix">./rocknix.xml</include>
+
+   <!-- helper -->
+   <include>./help-system.xml</include>
+</theme>

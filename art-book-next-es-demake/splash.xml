@@ -1,0 +1,36 @@
+<theme>
+   <include>./colors.xml</include>
+   <formatVersion>7</formatVersion>
+   <view name="splash">
+      <splash name="splash">
+         <backgroundColor>${splashBackgroundColor}</backgroundColor>
+      </splash>
+      <image name="background">
+         <!-- <origin>0 0</origin>
+         <pos>1 1</pos> -->
+         <pos>0.5 0.5</pos>
+         <origin>0.5 0.5</origin>
+         <minSize>1 1</minSize>
+         <path>:/logo.png</path>
+      </image>
+      <image name="progressbar">
+         <origin>0.5 0.</origin>
+         <pos>0.5 0.85</pos>
+         <color>${splashProgressbarBG}</color>
+         <colorEnd>${splashProgressbarBG}</colorEnd>
+      </image>
+      <image name="progressbar:active">
+         <color>${splashProgressbarActive}</color>
+         <colorEnd>${splashProgressbarActive}</colorEnd>
+      </image>
+      <text name="label">
+         <origin>0.5 0.5</origin>
+         <pos>0.5 0.8</pos>
+         <alignment>center</alignment>
+         <fontPath>${fontBold}</fontPath>
+         <fontSize>0.04</fontSize>
+         <color>${splashLabelcolor}</color>
+         <forceUppercase>true</forceUppercase>
+      </text>
+   </view>
+</theme>

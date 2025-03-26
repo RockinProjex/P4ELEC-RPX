@@ -1,0 +1,166 @@
+<theme>
+   <formatVersion>7</formatVersion>
+
+   <view name="screen">
+      <image name="borderOverlay" extra="true">
+         <path>./_inc/images/overlays/borders-16-9.png</path>
+      </image>
+
+
+      <image name="overlay-lcd-pic" ifSubset="overlay-effects:on" extra="true">
+         <path ifSubset="overlay-lcd:1">./_inc/images/overlays/lcd-grid-001-16x9.png</path>
+         <path ifSubset="overlay-lcd:2">./_inc/images/overlays/lcd-grid-001-16x9-inv.png</path>
+         <path ifSubset="overlay-lcd:3">./_inc/images/overlays/lcd-grid-003-16x9.png</path>
+         <path ifSubset="overlay-lcd:4">./_inc/images/overlays/lcd-grid-004-16x9.png</path>
+         <path ifSubset="overlay-lcd:5">./_inc/images/overlays/lcd-grid-005-GB-16x9.png</path>
+         <path ifSubset="overlay-lcd:6">./_inc/images/overlays/lcd-grid-006-GBP-16x9.png</path>
+         <path ifSubset="overlay-lcd:7">./_inc/images/overlays/lcd-grid-007-GBC-16x9.png</path>
+      </image>
+
+      <image name="overlay-scanline-pic" ifSubset="overlay-effects:on" extra="true">
+         <path ifSubset="overlay-scanline:1">./_inc/images/overlays/scanline-1-16x9.png</path>
+         <path ifSubset="overlay-scanline:2">./_inc/images/overlays/scanline-2-16x9.png</path>
+         <path ifSubset="overlay-scanline:3">./_inc/images/overlays/scanline-3-16x9.png</path>
+         <path ifSubset="overlay-scanline:4">./_inc/images/overlays/scanline-4-16x9.png</path>
+         <path ifSubset="overlay-scanline:5">./_inc/images/overlays/scanline-5_CRT1-16x9.png</path>
+         <path ifSubset="overlay-scanline:6">./_inc/images/overlays/scanline-6_CRT2-16x9.png</path>
+         <path ifSubset="overlay-scanline:7">./_inc/images/overlays/scanline-7_CRT3-16x9.png</path>
+      </image>
+
+      <text name="clock">
+         <origin>1 0</origin>
+         <pos>0.85 0.00925</pos>
+         <size>0.09 0.075</size>
+         <fontSize>0.045</fontSize>
+      </text>
+
+      <batteryIndicator name="batteryIndicator">
+         <origin>1 0</origin>
+         <size>0.055</size>
+         <pos>0.925 0.0125</pos>
+      </batteryIndicator>
+   </view>
+
+ 
+   <view name="system">
+      <carousel name="systemcarousel">
+         <logoSize>1.1 1.1</logoSize>
+         <maxLogoCount>5</maxLogoCount>
+      </carousel>
+
+      <image ifSubset="system-view-style:centered|centered-one-logo" name="system-art-mask" extra="true">
+         <path>./_inc/images/system-art-mask-16-9.png</path>
+      </image>
+
+      <!-- ------- MULITART LOGO TEXT ALT  ------- -->
+
+      <text ifSubset="system-view-style:multi|centered-one-logo|no-artwork-one-logo, system-logos:font" name="font_logoText" extra="true">
+         <pos>0.05 0</pos>
+         <pos ifHelpPrompts="true">0.05 -0.05</pos>
+         <fontSize>0.16</fontSize>
+         <lineSpacing>1.15</lineSpacing>
+         <lineSpacing ifSubset="color-scheme:gb-pocket">1.3</lineSpacing>
+      </text>
+
+       <!-- ------- GAME COUNT  ------- -->
+      <text name="systemInfo">
+         <pos>0.0 0.75</pos>
+         <y ifHelpPrompts="false">0.8</y>
+         <fontSize>0.075</fontSize>
+         <fontSize ifSubset="carousel-gc-pos:gc-tl|gc-br">0.065</fontSize>
+      </text>
+   </view>
+
+   <!-- Gamelist -->
+
+   <view name="basic,detailed">
+      <textlist name="gamelist">
+         <!-- small font -->
+         <fontSize ifSubset="fonts:small">0.033333333333333</fontSize>
+         <lines ifSubset="fonts:small" ifHelpPrompts="true">13</lines>
+         <lines ifSubset="fonts:small" ifHelpPrompts="false">15</lines>
+         <!-- default font -->
+         <fontSize ifSubset="fonts:default">0.041666666666667</fontSize>
+         <lines ifSubset="fonts:default" ifHelpPrompts="true">11</lines>
+         <lines ifSubset="fonts:default" ifHelpPrompts="false">13</lines>
+         <!-- large font -->
+         <fontSize ifSubset="fonts:large">0.05</fontSize><!-- 24 -->
+         <lines ifSubset="fonts:large" ifHelpPrompts="true">9</lines>
+         <lines ifSubset="fonts:large" ifHelpPrompts="false">11</lines>
+      </textlist>
+
+      <text name="logoText">
+         <size>0.45 0</size>
+         <fontSize>0.068</fontSize>
+         <lineSpacing>1.15</lineSpacing>
+      </text>
+
+   </view>
+
+   <view name="grid">
+      <text name="logoText">
+         <size>0.45 0</size>
+         <fontSize>0.068</fontSize>
+         <lineSpacing>1.15</lineSpacing>
+      </text>
+   </view>
+
+   <view name="gamecarousel">
+      <text name="logoText">
+         <size>0.45 0</size>
+         <fontSize>0.068</fontSize>
+         <lineSpacing>1.15</lineSpacing>
+      </text>
+
+      <gamecarousel name="gamecarousel">
+         <logoScale>1.9</logoScale>
+      </gamecarousel>
+
+      <text name="gamecarouselLogoText">
+         <fontSize>0.1</fontSize>
+         <lineSpacing>1.25</lineSpacing>
+      </text>
+   </view>
+
+   <!-- METADATA STATS -->
+
+   <view ifSubset="gamelist-view-style:metadata-on|metadata-on-immersive" name="detailed,gamecarousel,grid">
+      <text name="alt_gametime,alt_releasedate,alt_lastplayed,alt_publisher,md_name">
+         <fontSize>0.04</fontSize>
+      </text>
+      <image name="md_publisher_icon,md_lastplayed_icon,md_gametime_icon,md_releasedate_icon">
+         <size>0.0235 0.041</size>
+      </image>
+      <text name="md_description">
+         <fontSize>0.04</fontSize>
+         <lineSpacing>1.22</lineSpacing>
+      </text>
+   </view>
+
+      
+   <view name="detailed,gamecarousel,grid">
+
+      <!-- --- Game Logo marquee --- -->
+
+      <image name="md_marquee,no_marquee" extra="true">
+
+         <origin>0.5</origin>
+         <maxSize>0.225 0.135</maxSize>
+
+         <origin ifSubset="gamelist-view-style:metadata-on|metadata-on-immersive">0 0</origin>
+         <pos ifSubset="gamelist-view-style:metadata-on">0.525 0.0225</pos>
+
+         <pos ifSubset="gamelist-view-style:metadata-on-immersive">0.515 0.0225</pos>
+         <maxSize ifSubset="gamelist-view-style:metadata-on-immersive">0.2 0.2</maxSize>
+
+         <pos ifSubset="gamelist-view-style:metadata-off">0.75 0.275</pos>
+         <maxSize ifSubset="gamelist-view-style:metadata-off">0.42 0.35</maxSize>
+         
+         <origin ifSubset="gamelist-view-style:metadata-off-immersive">0.5 0</origin>
+         <pos ifSubset="gamelist-view-style:metadata-off-immersive">0.75 0.25</pos>
+         <maxSize ifSubset="gamelist-view-style:metadata-off-immersive">0.45 0.3</maxSize>
+
+      </image>
+   </view>
+
+</theme>

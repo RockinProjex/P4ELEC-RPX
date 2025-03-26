@@ -1,0 +1,59 @@
+<theme>
+
+   <formatVersion>7</formatVersion>
+
+   <view name="detailed,gamecarousel,grid">
+
+      <video  ifSubset="distribution:rocknix" name="md_video">
+         <visible>1</visible>
+         <path>{game:video}</path>
+         <origin>0.5</origin>
+         <pos>0.75 0.33</pos>
+         <maxSize>0.45</maxSize>
+         <maxSize ifSubset="gamelist-view-style:metadata-on-immersive">0.8</maxSize>
+         <maxSize ifSubset="gamelist-view-style:metadata-off-immersive">1.4 1.4</maxSize>
+         <y ifSubset="gamelist-view-style:metadata-off">0.692 </y>
+         <y ifSubset="gamelist-view-style:metadata-off-immersive">0.5</y>
+         <showSnapshotNoVideo>true</showSnapshotNoVideo>
+         <showSnapshotDelay>true</showSnapshotDelay>
+         <snapshotSource>image</snapshotSource>
+         <!-- <saturation ifSubset="color-scheme:gb-pocket|dos-dweeb">${systemArtSaturation}</saturation> -->
+         <!-- <color ifSubset="color-scheme:gb-pocket|dos-dweeb">${systemArtColor}9f</color> -->
+         <effect>none</effect>
+         <delay>3</delay>
+         <zIndex>3</zIndex>
+      </video>
+   </view>
+
+   <!-- ------ metadata stats ------ -->
+
+   <view ifSubset="gamelist-view-style:metadata-on|metadata-on-immersive" name="detailed,gamecarousel,grid">
+      <rating ifSubset="distribution:rocknix" name="md_rating">
+         <origin>0 0.5</origin>
+         <pos>0.545 0.613</pos>
+         <size>0 0.041666666666667</size>
+         <visible ifSubset="gamelist-view-style:metadata-on-immersive">false</visible>
+      </rating>
+
+      <datetime ifSubset="distribution:rocknix" name="md_releasedate">
+         <origin>0 0.5</origin>
+         <pos>0.85 0.613</pos>
+         <size>0.1 0.041666666666667</size>
+         <alignment>right</alignment>
+         <forceUppercase>true</forceUppercase>
+         <format>%Y-%m</format>
+         <format ifSubset="aspect-ratio:1-1">%Y</format>
+         <fontSize ifSubset="color-scheme:bruce|gb-pocket|dos-dweeb">0.0325</fontSize>
+         <visible ifSubset="gamelist-view-style:metadata-on-immersive">false</visible>
+      </datetime>
+
+      <image ifSubset="distribution:rocknix" name="md_releasedate_icon" extra="true">
+         <origin>0 0.5</origin>
+         <pos>0.82 0.613</pos>
+         <color>${gamelistListMetadataIconColor}</color>
+         <path>./_inc/images/icon-releasedate.svg</path>
+         <visible ifSubset="gamelist-view-style:metadata-on-immersive">false</visible>
+      </image>
+   </view>
+
+</theme>

@@ -1,0 +1,55 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <view name="system,basic,detailed,grid,gamecarousel">
+      <helpsystem ifHelpPrompts="true" name="help">
+         <fontPath>${helpFont}</fontPath>
+         <textColor>${helpTextColor}</textColor>
+         <iconColor>${helpIconColor}</iconColor>
+         <iconUpDown>./_inc/images/help-dpad-updown.svg</iconUpDown>
+         <iconLeftRight>./_inc/images/help-dpad-leftright.svg</iconLeftRight>
+         <iconUpDownLeftRight>./_inc/images/help-dpad-updownleftright.svg</iconUpDownLeftRight>
+         <iconA>./_inc/images/help-button-east.svg</iconA>
+         <iconB>./_inc/images/help-button-south.svg</iconB>
+         <iconX>./_inc/images/help-button-north.svg</iconX>
+         <iconY>./_inc/images/help-button-west.svg</iconY>
+      </helpsystem>
+      <helpsystem ifHelpPrompts="true" name="help">
+         <origin>0.5 0.5</origin>
+         <pos ifSubset="aspect-ratio:16-10">0.5 0.975</pos><!-- 50% 1137 -->
+         <fontSize ifSubset="aspect-ratio:16-10">0.031481481481481</fontSize><!-- 34 -->
+         <pos ifSubset="aspect-ratio:16-9">0.5 0.975</pos><!-- 50% 1017 -->
+         <fontSize ifSubset="aspect-ratio:16-9">0.031481481481481</fontSize><!-- 34 -->
+         <pos ifSubset="aspect-ratio:4-3">0.5 0.975</pos><!-- 50% 1137 -->
+         <fontSize ifSubset="aspect-ratio:4-3">0.028333333333333</fontSize><!-- 34 -->
+         <pos ifSubset="aspect-ratio:3-2">0.5 0.975</pos><!-- 50% 1137 -->
+         <fontSize ifSubset="aspect-ratio:3-2">0.028333333333333</fontSize><!-- 34 -->
+         <pos ifSubset="aspect-ratio:1-1">0.5 0.975</pos><!-- 50% 1137 -->
+         <fontSize ifSubset="aspect-ratio:1-1">0.021111111111111</fontSize><!-- 34 -->
+      </helpsystem>
+      <helpsystem ifHelpPrompts="true" ifSubset="color-scheme:dos-dweeb" name="help">
+         <fontSize ifSubset="aspect-ratio:4-3">0.027</fontSize>
+      </helpsystem>       
+      <image ifHelpPrompts="true" name="help-background" extra="static">
+         <origin>0 1</origin>
+         <pos>0 1</pos>
+         <size>1 0.104166666666667</size><!-- 100% 125 -->
+         <path>${spacerImage}</path>
+         <tile>true</tile>
+         <color>${helpBackgroundColor}</color>
+         <size ifSubset="aspect-ratio:16-10">1 0.05</size><!-- 100% 125 -->
+         <size ifSubset="aspect-ratio:16-9">1 0.05</size><!-- 100% 125 -->
+         <size ifSubset="aspect-ratio:4-3">1 0.05</size><!-- 100% 125 -->
+         <size ifSubset="aspect-ratio:3-2">1 0.05</size><!-- 100% 125 -->
+         <size ifSubset="aspect-ratio:1-1">1 0.05</size><!-- 100% 125 -->
+         <!-- <zIndex>12</zIndex> -->
+      </image>
+      <helpsystem ifHelpPrompts="false" name="help">
+         <origin>0 0</origin>
+         <pos>1 1</pos>
+      </helpsystem>
+      <!-- <storyboard>            
+         <animation event="activate" property="opacity" from="0" to="1" duration="350" mode="linear"/>
+         <animation event="activate" property="scale" from="0" to="1" duration="350" mode="Bump"/>
+      </storyboard> -->
+   </view>
+</theme>

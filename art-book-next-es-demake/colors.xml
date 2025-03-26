@@ -1,0 +1,711 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <variables ifSubset="color-scheme:art-book-next|custom">
+      <backgroundColor>222222</backgroundColor>
+      <!-- System View -->
+      <systemBackgroundColor>111111</systemBackgroundColor>
+      <systemCarouselBackgroundColor>000000</systemCarouselBackgroundColor>
+      <systemArtColor>ffffff</systemArtColor>
+      <systemArtSaturation>1</systemArtSaturation>
+      <systemArtFade>00000044</systemArtFade>
+      <systemMaskColor>111111</systemMaskColor>
+      <systemLogoColor>eeeeee</systemLogoColor>
+      <!-- Gamelist View - List Variants -->
+      <gamelistListTextlistBackgroundColor>111111</gamelistListTextlistBackgroundColor>
+      <gamelistListLogoColor>ffffffaa</gamelistListLogoColor>
+      <gamelistListTextlistSelectorColor>00000000</gamelistListTextlistSelectorColor>
+      <gamelistListTextlistSelectedColor>ffffff</gamelistListTextlistSelectedColor>
+      <gamelistListTextlistUnselectedColor>ffffff33</gamelistListTextlistUnselectedColor>
+      <gameListScrollbarColor>ffffff11</gameListScrollbarColor>
+      <!-- Metadata -->
+      <gamelistListMetadataBackgroundColor>222222</gamelistListMetadataBackgroundColor>
+      <gamelistListMetadataColor>ffffff55</gamelistListMetadataColor>
+      <gamelistListMetadataIconColor>ffffff22</gamelistListMetadataIconColor>
+      <gamelistListDescriptionColor>ffffffee</gamelistListDescriptionColor>
+      <gamelistListRatingColor>ffffff44</gamelistListRatingColor>
+      <!-- Help System -->
+      <helpBackgroundColor>000000</helpBackgroundColor>
+      <helpIconColor>ffffff66</helpIconColor>
+      <helpTextColor>ffffff66</helpTextColor>
+      <!-- Menu System -->
+      <menuTitle>ffffff</menuTitle>
+      <menuTitleFooter>ffffff77</menuTitleFooter>
+      <menuBackgroundColor>111111</menuBackgroundColor>
+      <menuUnSelectedColor>ffffff77</menuUnSelectedColor>
+      <menuSelectedColor>ffffff</menuSelectedColor>
+      <menuSelectorColor>00000000</menuSelectorColor>
+      <!-- Statusbar -->
+      <statusBarBackgroundColor>111111</statusBarBackgroundColor>
+      <statusBarIconColor>eeeeee</statusBarIconColor>
+      <!-- Splash Screen -- loading progress bar -->
+      <splashBackgroundColor>000000</splashBackgroundColor>
+      <splashProgressbarBG>222222</splashProgressbarBG>
+      <splashProgressbarActive>333333</splashProgressbarActive>
+      <splashLabelcolor>ffffff</splashLabelcolor>
+      <!-- Fonts -->
+      <fontBold>./_inc/fonts/Oxygen-Bold.ttf</fontBold>
+      <fontLight>./_inc/fonts/Oxygen-Light.ttf</fontLight>
+      <fontRegular>./_inc/fonts/Oxygen-Regular.ttf</fontRegular>
+      <fontLogo>./_inc/fonts/ChangaOne-Italic.ttf</fontLogo>
+      <helpFont>./_inc/fonts/opensans_hebrew_condensed_regular.ttf</helpFont>
+   </variables>
+
+   <variables ifSubset="color-scheme:art-book">
+      <backgroundColor>dddddd</backgroundColor>
+      <!-- System View -->
+      <systemBackgroundColor>111111</systemBackgroundColor>
+      <systemCarouselBackgroundColor>000000</systemCarouselBackgroundColor>
+      <systemArtColor>ffffff</systemArtColor>
+      <systemArtSaturation>1</systemArtSaturation>
+      <systemArtFade>00000044</systemArtFade>
+      <systemMaskColor>111111</systemMaskColor>
+      <systemLogoColor>eeeeee</systemLogoColor>
+      <!-- Gamelist View - List Variants -->
+      <gamelistListTextlistBackgroundColor>111111</gamelistListTextlistBackgroundColor>
+      <gamelistListLogoColor>ffffffaa</gamelistListLogoColor>
+      <gamelistListTextlistSelectorColor>00000000</gamelistListTextlistSelectorColor>
+      <gamelistListTextlistSelectedColor>ffffff</gamelistListTextlistSelectedColor>
+      <gamelistListTextlistUnselectedColor>ffffff33</gamelistListTextlistUnselectedColor>
+      <gameListScrollbarColor>ffffff11</gameListScrollbarColor>
+      <!-- Metadata -->
+      <gamelistListMetadataBackgroundColor>dddddd</gamelistListMetadataBackgroundColor>
+      <gamelistListMetadataColor>000000aa</gamelistListMetadataColor>
+      <gamelistListMetadataIconColor>00000055</gamelistListMetadataIconColor>
+      <gamelistListDescriptionColor>000000dd</gamelistListDescriptionColor>
+      <gamelistListRatingColor>00000055</gamelistListRatingColor>
+      <!-- Help System -->
+      <helpBackgroundColor>000000</helpBackgroundColor>
+      <helpIconColor>ffffff66</helpIconColor>
+      <helpTextColor>ffffff66</helpTextColor>
+      <!-- Menu System -->
+      <menuTitle>ffffff</menuTitle>
+      <menuTitleFooter>ffffff77</menuTitleFooter>
+      <menuBackgroundColor>111111</menuBackgroundColor>
+      <menuUnSelectedColor>ffffff77</menuUnSelectedColor>
+      <menuSelectedColor>ffffff</menuSelectedColor>
+      <menuSelectorColor>00000000</menuSelectorColor>
+      <!-- Statusbar -->
+      <statusBarBackgroundColor>111111</statusBarBackgroundColor>
+      <statusBarIconColor>eeeeee</statusBarIconColor>
+      <!-- Splash Screen -- loading progress bar -->
+      <splashBackgroundColor>000000</splashBackgroundColor>
+      <splashProgressbarBG>222222</splashProgressbarBG>
+      <splashProgressbarActive>333333</splashProgressbarActive>
+      <splashLabelcolor>ffffff</splashLabelcolor>
+      <!-- Fonts -->
+      <fontBold>./_inc/fonts/Oxygen-Bold.ttf</fontBold>
+      <fontLight>./_inc/fonts/Oxygen-Light.ttf</fontLight>
+      <fontRegular>./_inc/fonts/Oxygen-Regular.ttf</fontRegular>
+      <fontLogo>./_inc/fonts/ChangaOne-Italic.ttf</fontLogo>
+      <helpFont>./_inc/fonts/opensans_hebrew_condensed_regular.ttf</helpFont>
+   </variables>
+
+   <variables ifSubset="color-scheme:knulli">
+      <backgroundColor>1A1F1A</backgroundColor>
+      <!-- System View -->
+      <systemBackgroundColor>151A15</systemBackgroundColor>
+      <systemCarouselBackgroundColor>151A15</systemCarouselBackgroundColor>
+      <systemArtColor>CBCF72</systemArtColor>
+      <systemArtSaturation>1</systemArtSaturation>
+      <systemArtFade>00000044</systemArtFade>
+      <systemMaskColor>151A15</systemMaskColor>
+      <systemLogoColor>FFFFFF</systemLogoColor>
+      <!-- Gamelist View - List Variants -->
+      <gamelistListTextlistBackgroundColor>323B31</gamelistListTextlistBackgroundColor>
+      <gamelistListLogoColor>FEFFFE</gamelistListLogoColor>
+      <gamelistListTextlistSelectedColor>CBD071</gamelistListTextlistSelectedColor>
+      <gamelistListTextlistSelectorColor>3F4A3D</gamelistListTextlistSelectorColor>
+      <gamelistListTextlistUnselectedColor>CECFBC</gamelistListTextlistUnselectedColor>
+      <gameListScrollbarColor>3F4A3D</gameListScrollbarColor>
+      <!-- Metadata -->
+      <gamelistListMetadataBackgroundColor>1A1F1A</gamelistListMetadataBackgroundColor>
+      <gamelistListMetadataColor>CBD071</gamelistListMetadataColor>
+      <gamelistListMetadataIconColor>CBD07188</gamelistListMetadataIconColor>
+      <gamelistListDescriptionColor>CECFBC</gamelistListDescriptionColor>
+      <gamelistListRatingColor>CBD071</gamelistListRatingColor>
+      <!-- Help System -->
+      <helpBackgroundColor>151A15</helpBackgroundColor>
+      <helpIconColor>CBD071</helpIconColor>
+      <helpTextColor>CECFBC</helpTextColor>
+      <!-- Menu System -->
+      <menuTitle>FEFFFE</menuTitle>
+      <menuTitleFooter>CBD071</menuTitleFooter>
+      <menuBackgroundColor>323B31</menuBackgroundColor>
+      <menuUnSelectedColor>CECFBC</menuUnSelectedColor>
+      <menuSelectedColor>CBD071</menuSelectedColor>
+      <menuSelectorColor>3F4A3D</menuSelectorColor>
+      <!-- Statusbar -->
+      <statusBarBackgroundColor>151A15</statusBarBackgroundColor>
+      <statusBarIconColor>CBCC6E</statusBarIconColor>
+      <!-- Splash Screen -- loading progress bar -->
+      <splashBackgroundColor>000000</splashBackgroundColor>
+      <splashProgressbarBG>222222</splashProgressbarBG>
+      <splashProgressbarActive>333333</splashProgressbarActive>
+      <splashLabelcolor>ffffff</splashLabelcolor>
+      <!-- Fonts -->
+      <fontBold>./_inc/fonts/Gill-Sans-Medium.otf</fontBold>
+      <fontLight>./_inc/fonts/Gill-Sans-Light.otf</fontLight>
+      <fontRegular>./_inc/fonts/Gill-Sans-Regular.otf</fontRegular>
+      <fontLogo>./_inc/fonts/ChangaOne-Italic.ttf</fontLogo>
+      <helpFont>./_inc/fonts/Gill-Sans_Nova-cnmedium.ttf</helpFont>
+   </variables>
+
+
+<variables ifSubset="color-scheme:bruce">
+      <backgroundColor>0F1214</backgroundColor>
+      <!-- System View -->
+      <systemBackgroundColor>0F1214</systemBackgroundColor>
+      <systemCarouselBackgroundColor>0F1214</systemCarouselBackgroundColor>
+      <systemArtColor>F7CB5E</systemArtColor>
+      <systemArtSaturation>1</systemArtSaturation>
+      <systemArtFade>00000044</systemArtFade>
+      <systemMaskColor>0F1214</systemMaskColor>
+      <systemLogoColor>CEC5C3</systemLogoColor>
+      <!-- Gamelist View - List Variants -->
+      <gamelistListTextlistBackgroundColor>BA8A2D</gamelistListTextlistBackgroundColor>
+      <gamelistListLogoColor>0F1214</gamelistListLogoColor>
+      <gamelistListTextlistSelectedColor>FAEFED</gamelistListTextlistSelectedColor>
+      <gamelistListTextlistSelectorColor>0F1214</gamelistListTextlistSelectorColor>
+      <gamelistListTextlistUnselectedColor>0F1214</gamelistListTextlistUnselectedColor>
+      <gameListScrollbarColor>0F1214</gameListScrollbarColor>
+      <!-- Metadata -->
+      <gamelistListMetadataBackgroundColor>0F1214</gamelistListMetadataBackgroundColor>
+      <gamelistListMetadataColor>BA8A2D</gamelistListMetadataColor>
+      <gamelistListMetadataIconColor>BA8A2D88</gamelistListMetadataIconColor>
+      <gamelistListDescriptionColor>CEC5C3</gamelistListDescriptionColor>
+      <gamelistListRatingColor>BA8A2D</gamelistListRatingColor>
+      <!-- Help System -->
+      <helpBackgroundColor>0F1214</helpBackgroundColor>
+      <helpIconColor>F7B93A</helpIconColor>
+      <helpTextColor>807D7E</helpTextColor>
+      <!-- Menu System -->
+      <menuTitle>BA8A2D</menuTitle>
+      <menuTitleFooter>BA8A2D</menuTitleFooter>
+      <menuBackgroundColor>0F1214</menuBackgroundColor>
+      <menuUnSelectedColor>807D7E</menuUnSelectedColor>
+      <menuSelectedColor>FAEFED</menuSelectedColor>
+      <menuSelectorColor>BA8A2D</menuSelectorColor>
+      <!-- Statusbar -->
+      <statusBarBackgroundColor>0F1214</statusBarBackgroundColor>
+      <statusBarIconColor>F7B93A</statusBarIconColor>
+      <!-- Splash Screen -- loading progress bar -->
+      <splashBackgroundColor>0F1214</splashBackgroundColor>
+      <splashProgressbarBG>CEC5C3</splashProgressbarBG>
+      <splashProgressbarActive>BA8A2D</splashProgressbarActive>
+      <splashLabelcolor>CEC5C3</splashLabelcolor>
+      <!-- Fonts -->
+      <fontBold>./_inc/fonts/Fiery_Turk.ttf</fontBold>
+      <fontLight>./_inc/fonts/Fiery_Turk.ttf</fontLight>
+      <fontRegular>./_inc/fonts/Fiery_Turk.ttf</fontRegular>
+      <fontLogo>./_inc/fonts/ChangaOne-Italic.ttf</fontLogo>
+      <helpFont>./_inc/fonts/Gill-Sans_Nova-cnmedium.ttf</helpFont>
+   </variables>
+
+
+   <variables ifSubset="color-scheme:tokyo">
+      <backgroundColor>545C7E</backgroundColor>
+      <!-- System View -->
+      <systemBackgroundColor>24283B</systemBackgroundColor>
+      <systemCarouselBackgroundColor>24283B</systemCarouselBackgroundColor>
+      <systemArtColor>A9B1D6</systemArtColor>
+      <systemArtSaturation>1</systemArtSaturation>
+      <systemArtFade>00000044</systemArtFade>
+      <systemMaskColor>24283B</systemMaskColor>
+      <systemLogoColor>FFC777</systemLogoColor>
+      <!-- Gamelist View - List Variants -->
+      <gamelistListTextlistBackgroundColor>565F89</gamelistListTextlistBackgroundColor>
+      <gamelistListLogoColor>FFC777</gamelistListLogoColor>
+      <gamelistListTextlistSelectedColor>C3E88D</gamelistListTextlistSelectedColor>
+      <gamelistListTextlistSelectorColor>9D7CD8</gamelistListTextlistSelectorColor>
+      <gamelistListTextlistUnselectedColor>A9B1D6</gamelistListTextlistUnselectedColor>
+      <gameListScrollbarColor>9D7CD8</gameListScrollbarColor>
+      <!-- Metadata -->
+      <gamelistListMetadataBackgroundColor>545C7E</gamelistListMetadataBackgroundColor>
+      <gamelistListMetadataColor>FF9E64</gamelistListMetadataColor>
+      <gamelistListMetadataIconColor>C3E88D</gamelistListMetadataIconColor>
+      <gamelistListDescriptionColor>B4F9F8</gamelistListDescriptionColor>
+      <gamelistListRatingColor>FFC777</gamelistListRatingColor>
+      <!-- Help System -->
+      <helpBackgroundColor>24283B</helpBackgroundColor>
+      <helpIconColor>FF9E64</helpIconColor>
+      <helpTextColor>4FD6BE</helpTextColor>
+      <!-- Menu System -->
+      <menuTitle>FFC777</menuTitle>
+      <menuTitleFooter>4FD6BE</menuTitleFooter>
+      <menuBackgroundColor>565F89</menuBackgroundColor>
+      <menuUnSelectedColor>A9B1D6</menuUnSelectedColor>
+      <menuSelectedColor>C3E88D</menuSelectedColor>
+      <menuSelectorColor>9D7CD8</menuSelectorColor>
+      <!-- Statusbar -->
+      <statusBarBackgroundColor>24283B</statusBarBackgroundColor>
+      <statusBarIconColor>C3E88D</statusBarIconColor>
+      <!-- Splash Screen -- loading progress bar -->
+      <splashBackgroundColor>000000</splashBackgroundColor>
+      <splashProgressbarBG>A9B1D6</splashProgressbarBG>
+      <splashProgressbarActive>9D7CD8</splashProgressbarActive>
+      <splashLabelcolor>FFC777</splashLabelcolor>
+      <!-- Fonts -->
+      <fontBold>./_inc/fonts/Gill-Sans-Medium.otf</fontBold>
+      <fontLight>./_inc/fonts/Gill-Sans-Light.otf</fontLight>
+      <fontRegular>./_inc/fonts/Gill-Sans-Regular.otf</fontRegular>
+      <fontLogo>./_inc/fonts/ChangaOne-Italic.ttf</fontLogo>
+      <helpFont>./_inc/fonts/Gill-Sans_Nova-cnmedium.ttf</helpFont>
+   </variables>
+
+
+   <variables ifSubset="color-scheme:steam-os">
+      <backgroundColor>23262F</backgroundColor>
+      <!-- System View -->
+      <systemBackgroundColor>0D141C</systemBackgroundColor>
+      <systemCarouselBackgroundColor>0D141C</systemCarouselBackgroundColor>
+      <systemArtColor>ffffff</systemArtColor>
+      <systemArtSaturation>1</systemArtSaturation>
+      <systemArtFade>00000044</systemArtFade>
+      <systemMaskColor>0D141C</systemMaskColor>
+      <systemLogoColor>eeeeee</systemLogoColor>
+      <!-- Gamelist View - List Variants -->
+      <gamelistListTextlistBackgroundColor>0D141C</gamelistListTextlistBackgroundColor>
+      <gamelistListLogoColor>ffffffaa</gamelistListLogoColor>
+      <gamelistListTextlistSelectorColor>00000000</gamelistListTextlistSelectorColor>
+      <gamelistListTextlistSelectedColor>ffffff</gamelistListTextlistSelectedColor>
+      <gamelistListTextlistUnselectedColor>ffffff33</gamelistListTextlistUnselectedColor>
+      <gameListScrollbarColor>ffffff11</gameListScrollbarColor>
+      <!-- Metadata -->
+      <gamelistListMetadataBackgroundColor>23262F</gamelistListMetadataBackgroundColor>
+      <gamelistListMetadataColor>ffffff88</gamelistListMetadataColor>
+      <gamelistListMetadataIconColor>ffffff33</gamelistListMetadataIconColor>
+      <gamelistListDescriptionColor>ffffffee</gamelistListDescriptionColor>
+      <gamelistListRatingColor>ffffff33</gamelistListRatingColor>
+      <!-- Help System -->
+      <helpBackgroundColor>000000</helpBackgroundColor>
+      <helpIconColor>ffffff66</helpIconColor>
+      <helpTextColor>ffffff66</helpTextColor>
+      <!-- Menu System -->
+      <menuTitle>ffffff</menuTitle>
+      <menuTitleFooter>ffffff77</menuTitleFooter>
+      <menuBackgroundColor>0D141C</menuBackgroundColor>
+      <menuUnSelectedColor>ffffff77</menuUnSelectedColor>
+      <menuSelectedColor>ffffff</menuSelectedColor>
+      <menuSelectorColor>00000000</menuSelectorColor>
+      <!-- Statusbar -->
+      <statusBarBackgroundColor>0D141C</statusBarBackgroundColor>
+      <statusBarIconColor>eeeeee</statusBarIconColor>
+      <!-- Splash Screen -- loading progress bar -->
+      <splashBackgroundColor>000000</splashBackgroundColor>
+      <splashProgressbarBG>222222</splashProgressbarBG>
+      <splashProgressbarActive>333333</splashProgressbarActive>
+      <splashLabelcolor>ffffff</splashLabelcolor>
+      <!-- Fonts -->
+      <fontBold>./_inc/fonts/Oxygen-Bold.ttf</fontBold>
+      <fontLight>./_inc/fonts/Oxygen-Light.ttf</fontLight>
+      <fontRegular>./_inc/fonts/Oxygen-Regular.ttf</fontRegular>
+      <fontLogo>./_inc/fonts/ChangaOne-Italic.ttf</fontLogo>
+      <helpFont>./_inc/fonts/opensans_hebrew_condensed_regular.ttf</helpFont>
+   </variables>
+
+
+   <variables ifSubset="color-scheme:steam-os-nord">
+      <backgroundColor>0D141C</backgroundColor>
+      <!-- System View -->
+      <systemBackgroundColor>0D141C</systemBackgroundColor>
+      <systemCarouselBackgroundColor>0D141C</systemCarouselBackgroundColor>
+      <systemArtColor>ffffff</systemArtColor>
+      <systemArtSaturation>1</systemArtSaturation>
+      <systemArtFade>00000044</systemArtFade>
+      <systemMaskColor>0D141C</systemMaskColor>
+      <systemLogoColor>FFFFF8</systemLogoColor>
+      <!-- Gamelist View - List Variants -->
+      <gamelistListTextlistBackgroundColor>1B2839</gamelistListTextlistBackgroundColor>
+      <gamelistListLogoColor>FFFFF8</gamelistListLogoColor>
+      <gamelistListTextlistSelectedColor>ffffff</gamelistListTextlistSelectedColor>
+      <gamelistListTextlistSelectorColor>323A4B</gamelistListTextlistSelectorColor>
+      <gamelistListTextlistUnselectedColor>7A8689</gamelistListTextlistUnselectedColor>
+      <gameListScrollbarColor>323A4B</gameListScrollbarColor>
+      <!-- Metadata -->
+      <gamelistListMetadataBackgroundColor>0D141C</gamelistListMetadataBackgroundColor>
+      <gamelistListMetadataColor>ffffff88</gamelistListMetadataColor>
+      <gamelistListMetadataIconColor>65BCEF33</gamelistListMetadataIconColor>
+      <gamelistListDescriptionColor>ffffffee</gamelistListDescriptionColor>
+      <gamelistListRatingColor>65BCEF88</gamelistListRatingColor>
+      <!-- Help System -->
+      <helpBackgroundColor>0B1017</helpBackgroundColor>
+      <helpIconColor>65BCEF88</helpIconColor>
+      <helpTextColor>7A868966</helpTextColor>
+      <!-- Menu System -->
+      <menuTitle>ffffff</menuTitle>
+      <menuTitleFooter>ffffff77</menuTitleFooter>
+      <menuBackgroundColor>1B2839</menuBackgroundColor>
+      <menuUnSelectedColor>ffffff77</menuUnSelectedColor>
+      <menuSelectedColor>ffffff</menuSelectedColor>
+      <menuSelectorColor>366482</menuSelectorColor>
+      <!-- Statusbar -->
+      <statusBarBackgroundColor>0D141C</statusBarBackgroundColor>
+      <statusBarIconColor>65BCEF</statusBarIconColor>
+      <!-- Splash Screen -- loading progress bar -->
+      <splashBackgroundColor>1E1F29</splashBackgroundColor>
+      <splashProgressbarBG>222222</splashProgressbarBG>
+      <splashProgressbarActive>967CC7</splashProgressbarActive>
+      <splashLabelcolor>ffffff</splashLabelcolor>
+      <!-- Fonts -->
+      <fontBold>./_inc/fonts/Oxygen-Bold.ttf</fontBold>
+      <fontLight>./_inc/fonts/Oxygen-Light.ttf</fontLight>
+      <fontRegular>./_inc/fonts/Oxygen-Regular.ttf</fontRegular>
+      <fontLogo>./_inc/fonts/ChangaOne-Italic.ttf</fontLogo>
+      <helpFont>./_inc/fonts/opensans_hebrew_condensed_regular.ttf</helpFont>
+   </variables>
+
+
+   <variables ifSubset="color-scheme:dracula">
+      <backgroundColor>1E1F29</backgroundColor>
+      <!-- System View -->
+      <systemBackgroundColor>1E1F29</systemBackgroundColor>
+      <systemCarouselBackgroundColor>1E1F29</systemCarouselBackgroundColor>
+      <systemArtColor>A2A9D2</systemArtColor>
+      <systemArtSaturation>1</systemArtSaturation>
+      <systemArtFade>00000044</systemArtFade>
+      <systemMaskColor>1E1F29</systemMaskColor>
+      <systemLogoColor>FFFFF8</systemLogoColor>
+      <!-- Gamelist View - List Variants -->
+      <gamelistListTextlistBackgroundColor>272935</gamelistListTextlistBackgroundColor>
+      <gamelistListLogoColor>62D6E8</gamelistListLogoColor>
+      <gamelistListTextlistSelectedColor>725E97</gamelistListTextlistSelectedColor>
+      <gamelistListTextlistSelectorColor>32343F</gamelistListTextlistSelectorColor>
+      <gamelistListTextlistUnselectedColor>878482</gamelistListTextlistUnselectedColor>
+      <gameListScrollbarColor>32343F</gameListScrollbarColor>
+      <!-- Metadata -->
+      <gamelistListMetadataBackgroundColor>1E1F29</gamelistListMetadataBackgroundColor>
+      <gamelistListMetadataColor>ffffff88</gamelistListMetadataColor>
+      <gamelistListMetadataIconColor>655586</gamelistListMetadataIconColor>
+      <gamelistListDescriptionColor>ffffffee</gamelistListDescriptionColor>
+      <gamelistListRatingColor>725E97</gamelistListRatingColor>
+      <!-- Help System -->
+      <helpBackgroundColor>16171F</helpBackgroundColor>
+      <helpIconColor>7E64B3</helpIconColor>
+      <helpTextColor>62D6E8</helpTextColor>
+      <!-- Menu System -->
+      <menuTitle>62D6E8</menuTitle>
+      <menuTitleFooter>62D6E866</menuTitleFooter>
+      <menuBackgroundColor>1E1F29</menuBackgroundColor>
+      <menuUnSelectedColor>878482</menuUnSelectedColor>
+      <menuSelectedColor>ffffff</menuSelectedColor>
+      <menuSelectorColor>736299</menuSelectorColor>
+      <!-- Statusbar -->
+      <statusBarBackgroundColor>160D1C</statusBarBackgroundColor>
+      <statusBarIconColor>EA51B2</statusBarIconColor>
+      <!-- Splash Screen -- loading progress bar -->
+      <splashBackgroundColor>1E1F29</splashBackgroundColor>
+      <splashProgressbarBG>222222</splashProgressbarBG>
+      <splashProgressbarActive>967CC7</splashProgressbarActive>
+      <splashLabelcolor>ffffff</splashLabelcolor>
+      <!-- Fonts -->
+      <fontBold>./_inc/fonts/Oxygen-Bold.ttf</fontBold>
+      <fontLight>./_inc/fonts/Oxygen-Light.ttf</fontLight>
+      <fontRegular>./_inc/fonts/Oxygen-Regular.ttf</fontRegular>
+      <fontLogo>./_inc/fonts/ChangaOne-Italic.ttf</fontLogo>
+      <helpFont>./_inc/fonts/opensans_hebrew_condensed_regular</helpFont>
+   </variables>
+
+   <variables ifSubset="color-scheme:snes">
+      <backgroundColor>514689</backgroundColor>
+      <!-- System View -->
+      <systemBackgroundColor>231942</systemBackgroundColor>
+      <systemCarouselBackgroundColor>191526</systemCarouselBackgroundColor>
+      <systemArtColor>ffffff</systemArtColor>
+      <systemArtSaturation>1</systemArtSaturation>
+      <systemArtFade>00000044</systemArtFade>
+      <systemMaskColor>231942</systemMaskColor>
+      <systemLogoColor>eeeeee</systemLogoColor>
+      <!-- Gamelist View - List Variants -->
+      <gamelistListTextlistBackgroundColor>231942</gamelistListTextlistBackgroundColor>
+      <gamelistListLogoColor>ffffffaa</gamelistListLogoColor>
+      <gamelistListTextlistSelectorColor>00000000</gamelistListTextlistSelectorColor>
+      <gamelistListTextlistSelectedColor>ffffff</gamelistListTextlistSelectedColor>
+      <gamelistListTextlistUnselectedColor>ffffff33</gamelistListTextlistUnselectedColor>
+      <gameListScrollbarColor>ffffff11</gameListScrollbarColor>
+      <!-- Metadata -->
+      <gamelistListMetadataBackgroundColor>514689</gamelistListMetadataBackgroundColor>
+      <gamelistListMetadataColor>ffffffaa</gamelistListMetadataColor>
+      <gamelistListMetadataIconColor>ffffff55</gamelistListMetadataIconColor>
+      <gamelistListDescriptionColor>ffffffee</gamelistListDescriptionColor>
+      <gamelistListRatingColor>ffffff55</gamelistListRatingColor>
+      <!-- Help System -->
+      <helpBackgroundColor>000000</helpBackgroundColor>
+      <helpIconColor>ffffff66</helpIconColor>
+      <helpTextColor>ffffff66</helpTextColor>
+      <!-- Menu System -->
+      <menuTitle>ffffff</menuTitle>
+      <menuTitleFooter>ffffff77</menuTitleFooter>
+      <menuBackgroundColor>231942</menuBackgroundColor>
+      <menuUnSelectedColor>ffffff77</menuUnSelectedColor>
+      <menuSelectedColor>ffffff</menuSelectedColor>
+      <menuSelectorColor>00000000</menuSelectorColor>
+      <!-- Statusbar -->
+      <statusBarBackgroundColor>231942</statusBarBackgroundColor>
+      <statusBarIconColor>eeeeee</statusBarIconColor>
+      <!-- Splash Screen -- loading progress bar -->
+      <splashBackgroundColor>000000</splashBackgroundColor>
+      <splashProgressbarBG>222222</splashProgressbarBG>
+      <splashProgressbarActive>333333</splashProgressbarActive>
+      <splashLabelcolor>ffffff</splashLabelcolor>
+      <!-- Fonts -->
+      <fontBold>./_inc/fonts/Oxygen-Bold.ttf</fontBold>
+      <fontLight>./_inc/fonts/Oxygen-Light.ttf</fontLight>
+      <fontRegular>./_inc/fonts/Oxygen-Regular.ttf</fontRegular>
+      <fontLogo>./_inc/fonts/ChangaOne-Italic.ttf</fontLogo>
+      <helpFont>./_inc/fonts/opensans_hebrew_condensed_regular.ttf</helpFont>
+   </variables>
+
+
+   <variables ifSubset="color-scheme:famicom">
+      <backgroundColor>DCD6B6</backgroundColor>
+      <!-- System View -->
+      <systemBackgroundColor>711521</systemBackgroundColor>
+      <systemCarouselBackgroundColor>2f1619</systemCarouselBackgroundColor>
+      <systemArtColor>DCD6B6</systemArtColor>
+      <systemArtSaturation>0.5</systemArtSaturation>
+      <systemArtFade>00000044</systemArtFade>
+      <systemMaskColor>711521</systemMaskColor>
+      <systemLogoColor>DCD6B6</systemLogoColor>
+      <!-- Gamelist View - List Variants -->
+      <gamelistListTextlistBackgroundColor>711521</gamelistListTextlistBackgroundColor>
+      <gamelistListLogoColor>DCD6B6</gamelistListLogoColor>
+      <gamelistListTextlistSelectorColor>00000000</gamelistListTextlistSelectorColor>
+      <gamelistListTextlistSelectedColor>DCD6B6</gamelistListTextlistSelectedColor>
+      <gamelistListTextlistUnselectedColor>ffffff33</gamelistListTextlistUnselectedColor>
+      <gameListScrollbarColor>ffffff11</gameListScrollbarColor>
+      <!-- Metadata -->
+      <gamelistListMetadataBackgroundColor>DCD6B6</gamelistListMetadataBackgroundColor>
+      <gamelistListMetadataColor>000000aa</gamelistListMetadataColor>
+      <gamelistListMetadataIconColor>711521</gamelistListMetadataIconColor>
+      <gamelistListDescriptionColor>000000dd</gamelistListDescriptionColor>
+      <gamelistListRatingColor>711521</gamelistListRatingColor>
+      <!-- Help System -->
+      <helpBackgroundColor>000000</helpBackgroundColor>
+      <helpIconColor>ffffff66</helpIconColor>
+      <helpTextColor>ffffff66</helpTextColor>
+      <!-- Menu System -->
+      <menuTitle>ffffff</menuTitle>
+      <menuTitleFooter>ffffff77</menuTitleFooter>
+      <menuBackgroundColor>711521</menuBackgroundColor>
+      <menuUnSelectedColor>ffffff77</menuUnSelectedColor>
+      <menuSelectedColor>ffffff</menuSelectedColor>
+      <menuSelectorColor>00000000</menuSelectorColor>
+      <!-- Statusbar -->
+      <statusBarBackgroundColor>711521</statusBarBackgroundColor>
+      <statusBarIconColor>DCD6B6</statusBarIconColor>
+      <!-- Splash Screen -- loading progress bar -->
+      <splashBackgroundColor>000000</splashBackgroundColor>
+      <splashProgressbarBG>222222</splashProgressbarBG>
+      <splashProgressbarActive>333333</splashProgressbarActive>
+      <splashLabelcolor>ffffff</splashLabelcolor>
+      <!-- Fonts -->
+      <fontBold>./_inc/fonts/Oxygen-Bold.ttf</fontBold>
+      <fontLight>./_inc/fonts/Oxygen-Light.ttf</fontLight>
+      <fontRegular>./_inc/fonts/Oxygen-Regular.ttf</fontRegular>
+      <fontLogo>./_inc/fonts/ChangaOne-Italic.ttf</fontLogo>
+      <helpFont>./_inc/fonts/opensans_hebrew_condensed_regular.ttf</helpFont>
+   </variables>
+
+
+   <variables ifSubset="color-scheme:gb-pocket">
+      <backgroundColor>4E533D</backgroundColor>
+      <!-- System View -->
+      <systemBackgroundColor>8A956D</systemBackgroundColor>
+      <systemCarouselBackgroundColor>1F1F1F</systemCarouselBackgroundColor>
+      <!-- <systemArtColor>C3CFA188</systemArtColor> -->
+      <systemArtColor>8A956D</systemArtColor>
+      <systemArtSaturation>0</systemArtSaturation>
+      <systemArtFade>0000001c</systemArtFade>
+      <systemMaskColor>8A956D</systemMaskColor>
+      <systemLogoColor>8A956D</systemLogoColor>
+      <!-- Gamelist View - List Variants -->
+      <gamelistListTextlistBackgroundColor>8A956D</gamelistListTextlistBackgroundColor>
+      <gamelistListLogoColor>4E533D</gamelistListLogoColor>
+      <gamelistListTextlistSelectedColor>8A956D</gamelistListTextlistSelectedColor>
+      <gamelistListTextlistSelectorColor>4E533D</gamelistListTextlistSelectorColor>
+      <gamelistListTextlistUnselectedColor>4E533D</gamelistListTextlistUnselectedColor>
+      <gameListScrollbarColor>8A956D</gameListScrollbarColor>
+      <!-- Metadata -->
+      <gamelistListMetadataBackgroundColor>4E533D</gamelistListMetadataBackgroundColor>
+      <gamelistListMetadataColor>C3CFA188</gamelistListMetadataColor>
+      <gamelistListMetadataIconColor>1F1F1F88</gamelistListMetadataIconColor>
+      <gamelistListDescriptionColor>8A956D</gamelistListDescriptionColor>
+      <gamelistListRatingColor>8A956D</gamelistListRatingColor>
+      <!-- Help System -->
+      <helpBackgroundColor>1F1F1F</helpBackgroundColor>
+      <helpIconColor>8A956D</helpIconColor>
+      <helpTextColor>8A956D</helpTextColor>
+      <!-- Menu System -->
+      <menuTitle>4E533D</menuTitle>
+      <menuTitleFooter>1F1F1F66</menuTitleFooter>
+      <menuBackgroundColor>8A956D</menuBackgroundColor>
+      <menuUnSelectedColor>4E533D</menuUnSelectedColor>
+      <menuSelectedColor>8A956D</menuSelectedColor>
+      <menuSelectorColor>4E533D</menuSelectorColor>
+      <!-- Statusbar -->
+      <statusBarBackgroundColor>1F1F1F</statusBarBackgroundColor>
+      <statusBarIconColor>8A956D</statusBarIconColor>
+      <!-- Splash Screen -- loading progress bar -->
+      <splashBackgroundColor>8A956D</splashBackgroundColor>
+      <splashProgressbarBG>ffffff00</splashProgressbarBG>
+      <splashProgressbarActive>4E533D</splashProgressbarActive>
+      <splashLabelcolor>4E533D</splashLabelcolor>
+      <!-- Fonts -->
+      <fontBold>./_inc/fonts/Fiery_Turk.ttf</fontBold>
+      <fontLight>./_inc/fonts/Fiery_Turk.ttf</fontLight>
+      <fontRegular>./_inc/fonts/Fiery_Turk.ttf</fontRegular>
+      <fontLogo>./_inc/fonts/DiaryOfAn8BitMage-lYDD.ttf</fontLogo>
+      <helpFont>./_inc/fonts/Gbboot-ALpM.ttf</helpFont>
+   </variables>
+
+   <variables ifSubset="color-scheme:dos-dweeb">
+      <backgroundColor>0F0804</backgroundColor>
+      <!-- System View -->
+      <systemBackgroundColor>0F0804</systemBackgroundColor>
+      <systemCarouselBackgroundColor>0F0804</systemCarouselBackgroundColor>
+      <systemArtColor>FF8C3C</systemArtColor>
+      <systemArtSaturation>0</systemArtSaturation>
+      <systemArtFade>00000044</systemArtFade>
+      <systemMaskColor>0F0804</systemMaskColor>
+      <systemLogoColor>FF8C3C</systemLogoColor>
+      <!-- Gamelist View - List Variants -->
+      <gamelistListTextlistBackgroundColor>FF8C3C</gamelistListTextlistBackgroundColor>
+      <gamelistListLogoColor>6A3C1E</gamelistListLogoColor>
+      <gamelistListTextlistSelectedColor>FF8C3C</gamelistListTextlistSelectedColor>
+      <gamelistListTextlistSelectorColor>6A3C1E</gamelistListTextlistSelectorColor>
+      <gamelistListTextlistUnselectedColor>6A3C1E</gamelistListTextlistUnselectedColor>
+      <gameListScrollbarColor>FF8C3C</gameListScrollbarColor>
+      <!-- Metadata -->
+      <gamelistListMetadataBackgroundColor>0F0804</gamelistListMetadataBackgroundColor>
+      <gamelistListMetadataColor>FF8C3C</gamelistListMetadataColor>
+      <gamelistListMetadataIconColor>FF8C3C88</gamelistListMetadataIconColor>
+      <gamelistListDescriptionColor>FF8C3C</gamelistListDescriptionColor>
+      <gamelistListRatingColor>FF8C3C</gamelistListRatingColor>
+      <!-- Help System -->
+      <helpBackgroundColor>0F0602</helpBackgroundColor>
+      <helpIconColor>FF8C3C</helpIconColor>
+      <helpTextColor>AD6631</helpTextColor>
+      <!-- Menu System -->
+      <menuTitle>AD6631</menuTitle>
+      <menuTitleFooter>AD663166</menuTitleFooter>
+      <menuBackgroundColor>0F0804</menuBackgroundColor>
+      <menuUnSelectedColor>6A3C1E</menuUnSelectedColor>
+      <menuSelectedColor>FF8C3C</menuSelectedColor>
+      <menuSelectorColor>6A3C1E</menuSelectorColor>
+      <!-- Statusbar -->
+      <statusBarBackgroundColor>0F0804</statusBarBackgroundColor>
+      <statusBarIconColor>FF8C3C</statusBarIconColor>
+      <!-- Splash Screen -- loading progress bar -->
+      <splashBackgroundColor>0F0602</splashBackgroundColor>
+      <splashProgressbarBG>6A3C1E</splashProgressbarBG>
+      <splashProgressbarActive>FF8C3C</splashProgressbarActive>
+      <splashLabelcolor>FF8C3C</splashLabelcolor>
+      <!-- Fonts -->
+      <fontBold>./_inc/fonts/MorePerfectDOSVGA.ttf</fontBold>
+      <fontLight>./_inc/fonts/MorePerfectDOSVGA.ttf</fontLight>
+      <fontRegular>./_inc/fonts/MorePerfectDOSVGA.ttf</fontRegular>
+      <fontLogo>./_inc/fonts/MorePerfectDOSVGA.ttf</fontLogo>
+      <helpFont>./_inc/fonts/MorePerfectDOSVGA.ttf</helpFont>
+   </variables>
+
+   <variables ifSubset="color-scheme:black">
+      <backgroundColor>000000</backgroundColor>
+      <!-- System View -->
+      <systemBackgroundColor>000000</systemBackgroundColor>
+      <systemCarouselBackgroundColor>000000</systemCarouselBackgroundColor>
+      <systemArtColor>ffffff</systemArtColor>
+      <systemArtSaturation>1</systemArtSaturation>
+      <systemArtFade>00000044</systemArtFade>
+      <systemMaskColor>000000</systemMaskColor>
+      <systemLogoColor>eeeeee</systemLogoColor>
+      <!-- Gamelist View - List Variants -->
+      <gamelistListTextlistBackgroundColor>111111</gamelistListTextlistBackgroundColor>
+      <gamelistListLogoColor>ffffffaa</gamelistListLogoColor>
+      <gamelistListTextlistSelectorColor>00000000</gamelistListTextlistSelectorColor>
+      <gamelistListTextlistSelectedColor>ffffff</gamelistListTextlistSelectedColor>
+      <gamelistListTextlistUnselectedColor>ffffff33</gamelistListTextlistUnselectedColor>
+      <gameListScrollbarColor>ffffff11</gameListScrollbarColor>
+      <!-- Metadata -->
+      <gamelistListMetadataBackgroundColor>000000</gamelistListMetadataBackgroundColor>
+      <gamelistListMetadataColor>ffffff88</gamelistListMetadataColor>
+      <gamelistListMetadataIconColor>ffffff33</gamelistListMetadataIconColor>
+      <gamelistListDescriptionColor>ffffffee</gamelistListDescriptionColor>
+      <gamelistListRatingColor>ffffff33</gamelistListRatingColor>
+      <!-- Help System -->
+      <helpBackgroundColor>000000</helpBackgroundColor>
+      <helpIconColor>ffffff66</helpIconColor>
+      <helpTextColor>ffffff66</helpTextColor>
+      <!-- Menu System -->
+      <menuTitle>ffffff</menuTitle>
+      <menuTitleFooter>ffffff77</menuTitleFooter>
+      <menuBackgroundColor>111111</menuBackgroundColor>
+      <menuUnSelectedColor>ffffff77</menuUnSelectedColor>
+      <menuSelectedColor>ffffff</menuSelectedColor>
+      <menuSelectorColor>00000000</menuSelectorColor>
+      <!-- Statusbar -->
+      <statusBarBackgroundColor>000000</statusBarBackgroundColor>
+      <statusBarIconColor>eeeeee</statusBarIconColor>
+      <!-- Splash Screen -- loading progress bar -->
+      <splashBackgroundColor>000000</splashBackgroundColor>
+      <splashProgressbarBG>222222</splashProgressbarBG>
+      <splashProgressbarActive>333333</splashProgressbarActive>
+      <splashLabelcolor>ffffff</splashLabelcolor>
+      <!-- Fonts -->
+      <fontBold>./_inc/fonts/Oxygen-Bold.ttf</fontBold>
+      <fontLight>./_inc/fonts/Oxygen-Light.ttf</fontLight>
+      <fontRegular>./_inc/fonts/Oxygen-Regular.ttf</fontRegular>
+      <fontLogo>./_inc/fonts/ChangaOne-Italic.ttf</fontLogo>
+      <helpFont>./_inc/fonts/opensans_hebrew_condensed_regular.ttf</helpFont>
+   </variables>
+
+
+   <variables ifSubset="color-scheme:grayscale">
+      <backgroundColor>dddddd</backgroundColor>
+      <!-- System View -->
+      <systemBackgroundColor>777777</systemBackgroundColor>
+      <systemCarouselBackgroundColor>000000</systemCarouselBackgroundColor>
+      <systemArtColor>cccccc</systemArtColor>
+      <systemArtSaturation>0</systemArtSaturation>
+      <systemArtFade>00000044</systemArtFade>
+      <systemMaskColor>777777</systemMaskColor>
+      <systemLogoColor>cccccc</systemLogoColor>
+      <!-- Gamelist View - List Variants -->
+      <gamelistListTextlistBackgroundColor>777777</gamelistListTextlistBackgroundColor>
+      <gamelistListLogoColor>dddddd</gamelistListLogoColor>
+      <gamelistListTextlistSelectorColor>00000000</gamelistListTextlistSelectorColor>
+      <gamelistListTextlistSelectedColor>dddddd</gamelistListTextlistSelectedColor>
+      <gamelistListTextlistUnselectedColor>dddddd55</gamelistListTextlistUnselectedColor>
+      <gameListScrollbarColor>ffffff11</gameListScrollbarColor>
+      <!-- Metadata -->
+      <gamelistListMetadataBackgroundColor>dddddd</gamelistListMetadataBackgroundColor>
+      <gamelistListMetadataColor>000000aa</gamelistListMetadataColor>
+      <gamelistListMetadataIconColor>00000055</gamelistListMetadataIconColor>
+      <gamelistListDescriptionColor>000000dd</gamelistListDescriptionColor>
+      <gamelistListRatingColor>00000055</gamelistListRatingColor>
+      <!-- Help System -->
+      <helpBackgroundColor>000000</helpBackgroundColor>
+      <helpIconColor>ffffff66</helpIconColor>
+      <helpTextColor>ffffff66</helpTextColor>
+      <!-- Menu System -->
+      <menuTitle>ffffff</menuTitle>
+      <menuTitleFooter>ffffff77</menuTitleFooter>
+      <menuBackgroundColor>777777</menuBackgroundColor>
+      <menuUnSelectedColor>ffffff77</menuUnSelectedColor>
+      <menuSelectedColor>ffffff</menuSelectedColor>
+      <menuSelectorColor>00000000</menuSelectorColor>
+      <!-- Statusbar -->
+      <statusBarBackgroundColor>777777</statusBarBackgroundColor>
+      <statusBarIconColor>cccccc</statusBarIconColor>
+      <!-- Splash Screen -- loading progress bar -->
+      <splashBackgroundColor>000000</splashBackgroundColor>
+      <splashProgressbarBG>222222</splashProgressbarBG>
+      <splashProgressbarActive>333333</splashProgressbarActive>
+      <splashLabelcolor>ffffff</splashLabelcolor>
+      <!-- Fonts -->
+      <fontBold>./_inc/fonts/Oxygen-Bold.ttf</fontBold>
+      <fontLight>./_inc/fonts/Oxygen-Light.ttf</fontLight>
+      <fontRegular>./_inc/fonts/Oxygen-Regular.ttf</fontRegular>
+      <fontLogo>./_inc/fonts/ChangaOne-Italic.ttf</fontLogo>
+      <helpFont>./_inc/fonts/opensans_hebrew_condensed_regular.ttf</helpFont>
+   </variables>
+</theme>

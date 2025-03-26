@@ -1,0 +1,90 @@
+<theme>
+   <formatVersion>7</formatVersion>
+
+   <view name="screen">
+      <image name="borderOverlay" extra="true">
+         <path>./_inc/images/overlays/borders-4-3.png</path>
+      </image>
+
+      <text name="clock">
+         <fontSize>0.03125</fontSize>
+         <origin>1 0</origin>
+         <pos>0.825 0.014</pos>
+         <size>0.5 0.5</size>
+      </text>
+
+      <batteryIndicator name="batteryIndicator">
+         <origin>1 0</origin>
+         <size>0.045</size>
+         <pos>0.935 0.0125</pos>
+      </batteryIndicator>
+   </view>
+
+
+   <view name="system">
+      <carousel name="systemcarousel">
+         <logoSize>1.025 1.025</logoSize>
+         <maxLogoCount>3</maxLogoCount>
+      </carousel>
+
+      <image ifSubset="system-view-style:centered|centered-one-logo" name="system-art-mask" extra="true">
+         <path>./_inc/images/system-art-mask-1-1.png</path>
+      </image>
+
+      <!-- ----- LOGO ----- -->
+      <image ifSubset="system-view-style:multi" name="system-art" extra="true">
+         <maxSize>0.85 0.5</maxSize>
+      </image>
+
+      <!-- ------- GAME COUNT  ------- -->
+      <text name="systemInfo">
+         <pos>0.0 0.8</pos>
+         <y ifHelpPrompts="false">0.8</y>
+         <fontSize>0.065</fontSize>
+         <fontSize ifSubset="carousel-gc-pos:gc-tl|gc-br">0.065</fontSize>
+      </text>     
+   </view>
+
+
+   <!-- Gamelist -->
+
+   <view name="basic,detailed">
+      <textlist name="gamelist">
+         <!-- small font -->
+         <fontSize ifSubset="fonts:small">0.033333333333333</fontSize>
+         <lines ifSubset="fonts:small" ifHelpPrompts="true">13</lines>
+         <lines ifSubset="fonts:small" ifHelpPrompts="false">15</lines>
+         <!-- default font -->
+         <fontSize ifSubset="fonts:default">0.041666666666667</fontSize>
+         <lines ifSubset="fonts:default" ifHelpPrompts="true">11</lines>
+         <lines ifSubset="fonts:default" ifHelpPrompts="false">13</lines>
+         <!-- large font -->
+         <fontSize ifSubset="fonts:large">0.05</fontSize><!-- 24 -->
+         <lines ifSubset="fonts:large" ifHelpPrompts="true">9</lines>
+         <lines ifSubset="fonts:large" ifHelpPrompts="false">11</lines>
+      </textlist>
+   </view>
+
+
+   <view name="detailed,gamecarousel,grid">
+      <image name="md_marquee,no_marquee" extra="true">
+         <origin>0.5</origin>
+         <maxSize>0.195 0.1</maxSize>
+
+         <origin ifSubset="gamelist-view-style:metadata-on|metadata-on-immersive">0 0</origin>
+         <pos ifSubset="gamelist-view-style:metadata-on">0.525 0.0225</pos>
+
+         <pos ifSubset="gamelist-view-style:metadata-on-immersive">0.515 0.0225</pos>
+         <maxSize ifSubset="gamelist-view-style:metadata-on-immersive">0.2 0.2</maxSize>
+
+         <pos ifSubset="gamelist-view-style:metadata-off">0.75 0.275</pos>
+         <maxSize ifSubset="gamelist-view-style:metadata-off">0.42 0.35</maxSize>
+         
+         <origin ifSubset="gamelist-view-style:metadata-off-immersive">0.5 0</origin>
+         <pos ifSubset="gamelist-view-style:metadata-off-immersive">0.75 0.25</pos>
+         <maxSize ifSubset="gamelist-view-style:metadata-off-immersive">0.45 0.3</maxSize>
+      </image>
+   </view>
+
+
+</theme>
