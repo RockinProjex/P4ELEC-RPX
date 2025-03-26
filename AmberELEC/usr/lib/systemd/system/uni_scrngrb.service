@@ -1,0 +1,10 @@
+[Unit]
+Description=Hotkey and frame buffer screen grab
+
+[Service]
+ExecStart=/usr/bin/uni_scrngrb.sh
+Restart=always
+Type=idle
+
+[Install]
+WantedBy=multi-user.target
