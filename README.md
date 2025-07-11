@@ -67,10 +67,15 @@ Completing
 ---
 
 If you wish to use a dual TF setup, check the compatability guide to verify your card will work and then:
+
   Format it as ext4/ExFAT (again, OS dependent).
+  
   Turn off the R36S.
+  
   Insert the card in the correct slot. It should be marked as "TF2 Game".
-    Should it not, report it to r/R36S and show them where you bought it - it may be an elaborate clone.
+  
+  - Should it not, report it to r/R36S and show them where you bought it - it may be an elaborate clone.
+    
   Turn on the R36S. It should tell you it's formatting the card.
   
   
